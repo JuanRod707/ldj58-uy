@@ -13,11 +13,11 @@ public class Soul : MonoBehaviour
 
     public void SetFollowing(Transform follow)
     {
-        if (state == SoulState.Waiting)
-        {
-            previousNode = follow;
-            state = SoulState.Following;
-        }
+        if (state != SoulState.Waiting) return;
+        
+        previousNode = follow;
+        state = SoulState.Following;
+        transform.position = previousNode.position + (transform.position - previousNode.position).normalized * minDistance;
     }
     
     public enum SoulState
