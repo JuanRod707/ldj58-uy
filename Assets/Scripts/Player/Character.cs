@@ -14,12 +14,9 @@ namespace Assets.Scripts.Player
         [SerializeField] private UnityEngine.AI.NavMeshAgent agent;
         [SerializeField] private PlayerInput playerInput;
         [SerializeField] SoulCollector collector;
-
-        private float currentKillCooldown;
         
         public void Initialize(SoulProvider soulProvider, PortalProvider portals)
-        { 
-            currentKillCooldown = 0f;
+        {  
             collector.Initialize(soulProvider, portals, playerInput);
         }
         

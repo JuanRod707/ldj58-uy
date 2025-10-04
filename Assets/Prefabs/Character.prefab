@@ -246,7 +246,8 @@ MonoBehaviour:
   deliveryCooldown: 0.5
   deathLaser: {fileID: 6474381532330100322}
   collectDistance: 10
-  killCooldown: 1
+  killCooldown: 0.1
+  damagePerCooldown: 1
 --- !u!114 &1332487084385750824
 MonoBehaviour:
   m_ObjectHideFlags: 0

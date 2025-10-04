@@ -10,14 +10,24 @@ namespace Assets.Scripts.NPCs
         [SerializeField] float maxDistance;
         [SerializeField] LineFollow follow;
         [SerializeField] float suctionFactor;
-        
+        [SerializeField] private float maxHealth;
+        [SerializeField] private SpriteRenderer healthSprite;
 
+        private float currentHealth;
+        public float CurrentHealth => currentHealth;
+        
         public void Summon()
         {
+            currentHealth = maxHealth;
             gameObject.SetActive(true);
             follow.Initialize(minDistance, maxDistance);
         }
 
+        public void Damage(float amount)
+        {
+            currentHealth -= amount;
+            healthSprite.size = Vector2.one * currentHealth / maxHealth;
+        }
         public void SetFollowing(Transform target) => 
             follow.StartFollowing(target);
 
