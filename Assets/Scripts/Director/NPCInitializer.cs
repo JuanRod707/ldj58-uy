@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Assets.Scripts.NPCs;
 using Unity.AI.Navigation;
 using UnityEngine;
@@ -9,25 +10,34 @@ namespace Assets.Scripts.Director
     public class NPCInitializer : MonoBehaviour
     {
         [SerializeField] NavigationProvider navigation;
+        [SerializeField] int npcAmount;
+        [SerializeField] float mapDimension;
+        [SerializeField] Transform npcContainer;
+
+        [SerializeField] CivAI civPrefab;
+
         NavMeshData nm;
         NavMeshSurface nms;
-        IEnumerable<CivAI> civs;
+        List<CivAI> civs = new List<CivAI>();
 
         public void Initialize()
         {
             navigation.Initialize();
-            //SpawnCivs();
-
-            civs = FindObjectsByType<CivAI>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
-
-            foreach(var c in civs) 
-                c.Initialize(navigation);
+            SpawnCivs();
         }
 
         void SpawnCivs()
         {
-            var rpV2 = Random.insideUnitCircle;
-            var randomPoint = new Vector3(rpV2.x, 0, rpV2.y);
+            foreach (var _ in Enumerable.Range(0, npcAmount))
+            {
+                var randomPoint = new Vector3(Random.Range(-mapDimension, mapDimension), 0,
+                    Random.Range(-mapDimension, mapDimension));
+
+                var civ = Instantiate(civPrefab, npcContainer);
+                civ.transform.position = randomPoint;
+                civ.Initialize(navigation);
+                civs.Add(civ);
+            }
         }
     }
 }
