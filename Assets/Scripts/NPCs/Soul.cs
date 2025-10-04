@@ -9,17 +9,18 @@ namespace Assets.Scripts.NPCs
         [SerializeField] private float minDistance;
         [SerializeField] float maxDistance;
         [SerializeField] LineFollow follow;
+        [SerializeField] float suctionFactor;
+        
 
         public void Summon()
         {
             gameObject.SetActive(true);
             follow.Initialize(minDistance, maxDistance);
-            
         }
 
         public void SetFollowing(Transform target) => 
             follow.StartFollowing(target);
-        
+
         public void DeliverToPortal(Portal portal)
         {
             follow.enabled = false;
@@ -32,7 +33,7 @@ namespace Assets.Scripts.NPCs
 
             while (Vector3.Distance(transform.position, portal.position) > 0.1f)
             {
-                transform.position = Vector3.Lerp(transform.position, portal.position, 0.2f);
+                transform.position = Vector3.Lerp(transform.position, portal.position, suctionFactor);
                 transform.localScale = Vector3.one * Vector3.Distance(transform.position, portal.position) / startingDistance;
                 yield return null;
             }

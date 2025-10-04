@@ -3,6 +3,7 @@ using System.Linq;
 using Assets.Scripts.Director;
 using Assets.Scripts.NPCs;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Assets.Scripts.Player
 {
@@ -10,53 +11,79 @@ namespace Assets.Scripts.Player
     {
         [SerializeField] float portalProximity;
         [SerializeField] float deliveryCooldown;
+        [SerializeField] private DeathLaser deathLaser;
+        [SerializeField] private float collectDistance;
+        [SerializeField] private float killCooldown;
 
         PortalProvider portals;
-        List<Soul> collectedSouls;
+        List<Soul> collectedSouls = new List<Soul>();
+        SoulProvider soulProvider;
+        Transform lastInLine;
+        PlayerInput input;
+        float currentKillCooldown;
 
-        public void Initialize(PortalProvider portals)
+        public void Initialize(SoulProvider soulProvider, PortalProvider portals, PlayerInput input)
         {
             this.portals = portals;
+            this.soulProvider = soulProvider;
+            this.input = input;
+
+            lastInLine = transform;
+            input.actions["Attack"].performed += (InputAction.CallbackContext ctx) => AttemptAddSoul();
         }
 
         void Update()
         {
-            if (portals.AnyInRange(transform.position, portalProximity))
+            HandleInput();
+            DetectPortal();
+
+            if (currentKillCooldown < killCooldown)
+            {
+                currentKillCooldown += Time.deltaTime;
+            }
+        }
+
+        void DetectPortal()
+        {
+            if (collectedSouls.Any() & portals.AnyInRange(transform.position, portalProximity))
             {
                 var portal = portals.GetClosestTo(transform.position);
-                collectedSouls.Last().DeliverToPortal(portal);
+                var candidate = collectedSouls.Last();
+
+                candidate.DeliverToPortal(portal);
                 
+                collectedSouls.Remove(candidate);
+                lastInLine = collectedSouls.Any() ? collectedSouls.Last().transform : transform;
+
                 enabled = false;
                 Invoke("Continue", deliveryCooldown);
             }
         }
 
-        void RestAndContinue() => 
+        void HandleInput()
+        {
+            if (input.actions["Attack"].IsPressed() && currentKillCooldown >= killCooldown)
+            {
+                AttemptAddSoul();
+                currentKillCooldown = 0f;
+            }
+        }
+
+        void Continue() => 
             enabled = true;
-
-        //[SerializeField] PlayerInput playerInput;
-        //SoulProvider soulProvider;
-
-        //Transform lastInLine;
-        //PlayerStats stats;
-
-        //public void Initialize(SoulProvider provider, PlayerStats stats)
-        //{
-        //    this.stats = stats;
-        //    this.soulProvider = provider;
-            
-        //    lastInLine = transform;
-        //    playerInput.actions["Attack"].performed += (InputAction.CallbackContext ctx) => AttemptAddSoul();
-        //}
         
-        //private void AttemptAddSoul()
-        //{
-        //    if (soulProvider.AnyInRange(transform.position, stats.DetectionRadius))
-        //    {
-        //        Soul soul = soulProvider.GetClosestTo(transform.position);
-        //        soul.SetFollowing(lastInLine);
-        //        lastInLine = soul.transform;
-        //    }
-        //}
+        private void AttemptAddSoul()
+        {
+            if (soulProvider.AnyInRange(transform.position, collectDistance))
+            {
+                Soul soul = soulProvider.GetClosestTo(transform.position);
+                soulProvider.RemoveSoul(soul);
+                deathLaser.ThrowLaser(soul.transform.position, killCooldown);
+                collectedSouls.Add(soul);
+
+                soul.SetFollowing(lastInLine);
+                lastInLine = soul.transform;
+            }
+        }
     }
 }

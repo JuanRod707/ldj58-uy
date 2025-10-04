@@ -164,6 +164,7 @@ GameObject:
   - component: {fileID: 6850543672787610454}
   - component: {fileID: 726852241093729498}
   - component: {fileID: 7882080830790685856}
+  - component: {fileID: 328943352393250312}
   - component: {fileID: 1332487084385750824}
   m_Layer: 0
   m_Name: Character
@@ -228,9 +229,24 @@ MonoBehaviour:
     speedReductionMult: 0.5
   agent: {fileID: 726852241093729498}
   playerInput: {fileID: 1332487084385750824}
-  maxKillDistance: 5
-  killCooldown: 1
+  collector: {fileID: 328943352393250312}
+--- !u!114 &328943352393250312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5624535624215263538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55226aa572be3534e86829d61b051f3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portalProximity: 5
+  deliveryCooldown: 0.5
   deathLaser: {fileID: 6474381532330100322}
+  collectDistance: 10
+  killCooldown: 1
 --- !u!114 &1332487084385750824
 MonoBehaviour:
   m_ObjectHideFlags: 0

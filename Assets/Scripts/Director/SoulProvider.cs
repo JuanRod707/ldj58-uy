@@ -32,11 +32,13 @@ namespace Assets.Scripts.Director
             }
         }
         
-        public Soul GetClosestTo(Vector3 where, float maxDistance) =>
+        public Soul GetClosestTo(Vector3 where) =>
             availableSouls
-                .Where(c => Vector3.Distance(c.transform.position, where) < maxDistance)
                 .OrderBy(c => Vector3.Distance(c.transform.position, where))
-                .FirstOrDefault();
+                .First();
+
+        public bool AnyInRange(Vector3 where, float range) => 
+            availableSouls.Any(c => Vector3.Distance(c.transform.position, where) < range);
 
         public void RemoveSoul(Soul soulToRemove) => availableSouls.Remove(soulToRemove);
         
@@ -57,6 +59,5 @@ namespace Assets.Scripts.Director
             }
             
         }
-
     }
 }
