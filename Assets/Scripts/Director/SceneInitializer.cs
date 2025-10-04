@@ -9,8 +9,8 @@ namespace Assets.Scripts.Director
         [SerializeField] private PlayerCharacter player;
         void Start()
         {   
-            player?.Initialize();
-            npcs?.Initialize();
+            player.Initialize();
+            npcs.Initialize();
         }
     }
 }
