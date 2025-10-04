@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Assets
+namespace Assets.Scripts.NPCs
 {
     public class LineFollow : MonoBehaviour
     {
@@ -30,6 +30,7 @@ namespace Assets
         public void StartFollowing(Transform target)
         {
             this.target = target;
+            transform.position = target.position;
             enabled = true;
         }
     }

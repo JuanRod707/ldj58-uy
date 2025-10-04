@@ -17,6 +17,7 @@ namespace Assets.Scripts.NPCs
         [SerializeField] float minWait, maxWait;
         [SerializeField] float reachDistance;
         [SerializeField] Movement movement;
+        [SerializeField] private GameObject spriteObject;
         
         Vector3 currentTargetPoint;
         NavigationProvider navigation;
@@ -49,6 +50,7 @@ namespace Assets.Scripts.NPCs
         {
             Alive = false;
             StopAllCoroutines();
+            gameObject.SetActive(false);
         }
     }
 }

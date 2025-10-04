@@ -200,3 +200,4 @@ MonoBehaviour:
   maxWait: 10
   reachDistance: 1
   movement: {fileID: 3046743658385447428}
+  spriteObject: {fileID: 6354818553940710902}

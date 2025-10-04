@@ -21,6 +21,7 @@ namespace Assets.Scripts.Director
         NavMeshSurface nms;
         List<CivAI> civs = new List<CivAI>();
 
+        public int NPCAmount => npcAmount;
         public void Initialize()
         {
             navigation.Initialize();

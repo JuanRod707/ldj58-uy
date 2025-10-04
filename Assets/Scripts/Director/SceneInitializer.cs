@@ -6,11 +6,13 @@ namespace Assets.Scripts.Director
     public class SceneInitializer : MonoBehaviour
     {
         [SerializeField] NPCInitializer npcs;
-        [SerializeField] private PlayerCharacter player;
+        [SerializeField] private Character player;
+        [SerializeField] private SoulProvider soulProvider;
         void Start()
         {   
-            player.Initialize();
             npcs.Initialize();
+            soulProvider.Initialize(npcs);
+            player.Initialize(soulProvider);
         }
     }
 }

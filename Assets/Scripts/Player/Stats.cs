@@ -1,15 +1,14 @@
 ﻿using System.Collections.Generic;
+using Assets.Scripts.NPCs;
 using UnityEngine;
 
 namespace Assets.Scripts.Player
 {
     [System.Serializable]
-    public class PlayerStats
+    public class Stats
     {
         [SerializeField] private float speed;
         [SerializeField] private float speedReductionMult; 
-        [SerializeField] private float detectionRadius;
-        [SerializeField] private float detectionSpeed;
 
         private List<Soul> souls;
         public List<Soul> Souls
@@ -23,9 +22,7 @@ namespace Assets.Scripts.Player
             set => souls = value;
         }
 
-        public float GetTotalSpeed => speed - (Souls.Count * speedReductionMult);
-        public float DetectionRadius => detectionRadius;
-        public float DetectionSpeed => detectionSpeed;
+        public float GetTotalSpeed => speed - (Souls.Count * speedReductionMult); 
  
     }
 }

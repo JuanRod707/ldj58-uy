@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Assets.Scripts.Director;
+using Assets.Scripts.NPCs;
 using UnityEngine;
 
 namespace Assets.Scripts.Player
