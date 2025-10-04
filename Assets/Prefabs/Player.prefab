@@ -69,8 +69,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a22e84c612984d5f9d5063712f21f06e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stats:
+    speed: 10
+    speedReductionMult: 0.5
+    detectionRadius: 1
+    detectionSpeed: 0.05
   agent: {fileID: 726852241093729498}
   playerInput: {fileID: 1332487084385750824}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!114 &1332487084385750824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,7 +192,7 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
-  m_NeverAutoSwitchControlSchemes: 1
+  m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1

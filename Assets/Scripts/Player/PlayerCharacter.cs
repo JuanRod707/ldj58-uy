@@ -1,24 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 namespace Assets.Scripts.Player
 {
     public class PlayerCharacter : MonoBehaviour
     {
-        [SerializeField] private Stats playerStats;
+        [SerializeField] private PlayerStats stats;
         [SerializeField] private UnityEngine.AI.NavMeshAgent agent;
         [SerializeField] private PlayerInput playerInput;
         [SerializeField] private LayerMask layerMask;
 
-        private List<Soul> souls = new List<Soul>();
-        private void Start()
-        {
-            //TODO move to initializer
+        private Soul currentSoulToAdd = null;
+        public void Initialize()
+        { 
             StartCoroutine(Detect());
+            playerInput.actions["Attack"].performed += (InputAction.CallbackContext ctx) => AddSoul();
         }
+ 
 
         public void FixedUpdate()
         {
@@ -30,7 +32,7 @@ namespace Assets.Scripts.Player
             if (playerInput.actions["Move"].IsPressed())
             {
                 Vector3 inputVector = playerInput.actions["Move"].ReadValue<Vector2>() *
-                                      (Time.fixedDeltaTime * (playerStats.Speed));
+                                      (Time.fixedDeltaTime * (stats.GetTotalSpeed));
                 agent.Move(new Vector3(inputVector.x, 0, inputVector.y));
             }
         }
@@ -39,39 +41,29 @@ namespace Assets.Scripts.Player
         {
             while (true)
             {
-                if (Physics.SphereCast(transform.position, playerStats.DetectionRadius, transform.forward, out var hit, 
-                        playerStats.DetectionRadius))
+                if (Physics.SphereCast(transform.position, stats.DetectionRadius, transform.forward, out var hit, 
+                        stats.DetectionRadius))
                 { 
-                    Soul newSoul = hit.collider.gameObject.GetComponent<Soul>();
-
-                    if (newSoul is not null)
-                    {
-                        if (souls.Count == 0)
-                        { 
-                            newSoul.SetFollowing(transform);
-                            souls.Add(newSoul); 
-                        }
-                        else if(!souls.Contains(newSoul))
-                        {
-                            newSoul.SetFollowing(souls.Last().transform);
-                            souls.Add(newSoul);
-                        } 
-                    }
-                   
+                    currentSoulToAdd = hit.collider.gameObject.GetComponent<Soul>();
                 }
-                Debug.Log("Detecting");
-                yield return new WaitForSeconds(playerStats.DetectionSpeed);
+                yield return new WaitForSeconds(stats.DetectionSpeed);
             } 
-        } 
-    }
+        }
 
-}
- 
-[System.Serializable]
-public struct Stats
-{
-    public int CurrentSoulsAmount;
-    public float Speed;
-    public float DetectionRadius;
-    public float DetectionSpeed;
+        private void AddSoul()
+        {
+            if(currentSoulToAdd is null) return;
+            
+            if (stats.Souls.Count == 0)
+            { 
+                currentSoulToAdd.SetFollowing(transform);
+                stats.Souls.Add(currentSoulToAdd); 
+            }
+            else if(!stats.Souls.Contains(currentSoulToAdd))
+            {
+                currentSoulToAdd.SetFollowing(stats.Souls.Last().transform);
+                stats.Souls.Add(currentSoulToAdd);
+            }
+        }
+    }
 }
