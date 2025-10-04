@@ -20,9 +20,11 @@ namespace Assets.Scripts.NPCs
         
         Vector3 currentTargetPoint;
         NavigationProvider navigation;
+        public bool Alive { get; private set; }
 
         public void Initialize(NavigationProvider navigation)
         {
+            Alive = true;
             this.navigation = navigation;
             StartCoroutine(WaitAndNavigate());
         }
@@ -41,6 +43,12 @@ namespace Assets.Scripts.NPCs
         {
             yield return new WaitUntil(() => Vector3.Distance(transform.position, currentTargetPoint) < reachDistance);
             StartCoroutine(WaitAndNavigate());
+        }
+
+        public void Kill()
+        {
+            Alive = false;
+            StopAllCoroutines();
         }
     }
 }

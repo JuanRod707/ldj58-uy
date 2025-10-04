@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Assets.Scripts.Common;
 using Assets.Scripts.NPCs;
 using Unity.AI.Navigation;
 using UnityEngine;
@@ -45,5 +46,7 @@ namespace Assets.Scripts.Director
                 .Where(c => Vector3.Distance(c.transform.position, where) < maxDistance)
                 .OrderBy(c => Vector3.Distance(c.transform.position, where))
                 .First();
+
+        public CivAI GetRandomAlive() => civs.Where(c => c.Alive).PickOne();
     }
 }
