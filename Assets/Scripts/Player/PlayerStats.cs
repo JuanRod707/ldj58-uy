@@ -10,15 +10,20 @@ namespace Assets.Scripts.Player
         [SerializeField] private float speedReductionMult; 
         [SerializeField] private float detectionRadius;
         [SerializeField] private float detectionSpeed;
-        
+
         private List<Soul> souls;
         public List<Soul> Souls
         {
-            get => souls ?? new List<Soul>();
+            get
+            {
+                souls ??= new List<Soul>();
+
+                return souls;
+            }
             set => souls = value;
         }
 
-        public float GetTotalSpeed => speed - (souls.Count * speedReductionMult);
+        public float GetTotalSpeed => speed - (Souls.Count * speedReductionMult);
         public float DetectionRadius => detectionRadius;
         public float DetectionSpeed => detectionSpeed;
  

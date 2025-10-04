@@ -398,7 +398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a5a67e02686c174a90ad51c96f9a98e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcs: {fileID: 2019380431}
+  npcs: {fileID: 0}
   player: {fileID: 1112271871}
 --- !u!4 &253662736
 Transform:
@@ -1861,55 +1861,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872753540}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2019380430
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2019380432}
-  - component: {fileID: 2019380431}
-  m_Layer: 0
-  m_Name: ACTORS
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2019380431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019380430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80c9404de5d67024c87559318d3e710f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  navigation: {fileID: 0}
-  npcAmount: 100
-  mapDimension: 50
-  npcContainer: {fileID: 2019380432}
-  civPrefab: {fileID: 7659751928330101507, guid: 6390c7c0a0c072940b11e526b6c244b0, type: 3}
---- !u!4 &2019380432
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019380430}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2034150009
 GameObject:
   m_ObjectHideFlags: 0
@@ -2397,10 +2348,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1332487084385750824, guid: 0ffa65b3efce0b9449824c38e11ecc37, type: 3}
       propertyPath: m_DefaultControlScheme
-      value: Keyboard&Mouse
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1332487084385750824, guid: 0ffa65b3efce0b9449824c38e11ecc37, type: 3}
       propertyPath: m_NotificationBehavior
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332487084385750824, guid: 0ffa65b3efce0b9449824c38e11ecc37, type: 3}
+      propertyPath: m_NeverAutoSwitchControlSchemes
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5624535624215263538, guid: 0ffa65b3efce0b9449824c38e11ecc37, type: 3}
@@ -2504,4 +2459,3 @@ SceneRoots:
   - {fileID: 841466801}
   - {fileID: 1332425080}
   - {fileID: 253662736}
-  - {fileID: 2019380432}
