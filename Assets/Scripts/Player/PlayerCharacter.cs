@@ -1,5 +1,6 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,7 +11,9 @@ namespace Assets.Scripts.Player
         [SerializeField] private Stats playerStats;
         [SerializeField] private UnityEngine.AI.NavMeshAgent agent;
         [SerializeField] private PlayerInput playerInput;
+        [SerializeField] private LayerMask layerMask;
 
+        private List<Soul> souls = new List<Soul>();
         private void Start()
         {
             //TODO move to initializer
@@ -34,26 +37,36 @@ namespace Assets.Scripts.Player
 
         private IEnumerator Detect()
         {
-            if (Physics.SphereCast(transform.position, playerStats.DetectionRadius, transform.forward, out var hit))
+            while (true)
             {
-                if (hit.collider.CompareTag("Soul"))
-                {
-                    
+                if (Physics.SphereCast(transform.position, playerStats.DetectionRadius, transform.forward, out var hit, 
+                        playerStats.DetectionRadius))
+                { 
+                    Soul newSoul = hit.collider.gameObject.GetComponent<Soul>();
+
+                    if (newSoul is not null)
+                    {
+                        if (souls.Count == 0)
+                        { 
+                            newSoul.SetFollowing(transform);
+                            souls.Add(newSoul); 
+                        }
+                        else if(!souls.Contains(newSoul))
+                        {
+                            newSoul.SetFollowing(souls.Last().transform);
+                            souls.Add(newSoul);
+                        } 
+                    }
+                   
                 }
-            }
-
-            yield return new WaitForSeconds(playerStats.DetectionSpeed);
-        }
-
-        private void OnDrawGizmos()
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawSphere(transform.position, playerStats.DetectionRadius);
-            
-        }
+                Debug.Log("Detecting");
+                yield return new WaitForSeconds(playerStats.DetectionSpeed);
+            } 
+        } 
     }
-}
 
+}
+ 
 [System.Serializable]
 public struct Stats
 {
