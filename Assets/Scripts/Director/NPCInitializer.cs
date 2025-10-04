@@ -39,5 +39,11 @@ namespace Assets.Scripts.Director
                 civs.Add(civ);
             }
         }
+
+        public CivAI GetClosestTo(Vector3 where, float maxDistance) =>
+            civs
+                .Where(c => Vector3.Distance(c.transform.position, where) < maxDistance)
+                .OrderBy(c => Vector3.Distance(c.transform.position, where))
+                .First();
     }
 }
