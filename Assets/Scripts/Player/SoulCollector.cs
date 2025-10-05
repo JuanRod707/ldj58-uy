@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Assets.Scripts.Config;
 using Assets.Scripts.Director;
+using Assets.Scripts.Entities;
 using Assets.Scripts.NPCs;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -114,9 +115,20 @@ namespace Assets.Scripts.Player
         public bool AnyCollectedSoulInRange(Vector3 where, float distance) => 
             collectedSouls.Any(cs => Vector3.Distance(where, cs.transform.position) < distance);
 
-        public void RiftSoul(Soul candidate)
+        public void RiftSoul(Rift rift, Soul riftedSoul)
         {
-            //WIP
+            var severedSouls =
+                collectedSouls.TakeWhile(s => collectedSouls.IndexOf(s) > collectedSouls.IndexOf(riftedSoul));
+
+            foreach (var ss in severedSouls)
+            {
+                collectedSouls.Remove(ss);
+                ss.Detach();
+            }
+
+            riftedSoul.DeliverToRift(rift);
+            collectedSouls.Remove(riftedSoul);
+            lastInLine = collectedSouls.Any() ? collectedSouls.Last().transform : transform;
         }
     }
 }

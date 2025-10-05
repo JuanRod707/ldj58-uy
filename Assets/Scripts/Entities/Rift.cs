@@ -21,7 +21,7 @@ namespace Assets.Scripts.Entities
             if (soulCollector.AnyCollectedSoulInRange(transform.position, pullDistance))
             {
                 var candidate = soulCollector.ClosestSoulTo(transform.position);
-                soulCollector.RiftSoul(candidate);
+                soulCollector.RiftSoul(this, candidate);
             }
         }
 

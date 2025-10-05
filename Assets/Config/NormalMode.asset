@@ -23,6 +23,6 @@ MonoBehaviour:
   MinRiftInterval: 20
   MaxRiftInterval: 30
   RiftIntervalCutPerRound: 0.15
-  RiftPullDistance: 8
-  PortalPullDistance: 5
+  RiftPullDistance: 4
+  PortalPullDistance: 3
   MapSize: 50

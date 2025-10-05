@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Assets.Scripts.Entities;
 using UnityEngine;
@@ -13,7 +14,7 @@ namespace Assets.Scripts.NPCs
         [SerializeField] private float maxHealth;
         [SerializeField] private SpriteRenderer healthSprite;
 
-        private float currentHealth;
+        float currentHealth;
         public float CurrentHealth => currentHealth;
         
         public void Summon()
@@ -33,23 +34,32 @@ namespace Assets.Scripts.NPCs
 
         public void DeliverToPortal(Portal portal)
         {
-            follow.enabled = false;
-            StartCoroutine(DeliverSoulTo(portal));
+            Detach();
+            StartCoroutine(DeliverSoulTo(portal.transform, portal.OnSoulDelivered));
         }
 
-        IEnumerator DeliverSoulTo(Portal portal)
+        IEnumerator DeliverSoulTo(Transform where, Action onComplete)
         {
-            var startingDistance = Vector3.Distance(transform.position, portal.transform.position);
+            var startingDistance = Vector3.Distance(transform.position, where.position);
 
-            while (Vector3.Distance(transform.position, portal.transform.position) > 0.1f)
+            while (Vector3.Distance(transform.position, where.position) > 0.1f)
             {
-                transform.position = Vector3.Lerp(transform.position, portal.transform.position, suctionFactor);
-                transform.localScale = Vector3.one * Vector3.Distance(transform.position, portal.transform.position) / startingDistance;
+                transform.position = Vector3.Lerp(transform.position, where.position, suctionFactor);
+                transform.localScale = Vector3.one * Vector3.Distance(transform.position, where.position) / startingDistance;
                 yield return null;
             }
 
-            portal.OnSoulDelivered();
+            onComplete();
             Destroy(gameObject);
+        }
+
+        public void  Detach() => 
+            follow.enabled = false;
+
+        public void DeliverToRift(Rift rift)
+        {
+            Detach();
+            StartCoroutine(DeliverSoulTo(rift.transform, () => { }));
         }
     }
 }
