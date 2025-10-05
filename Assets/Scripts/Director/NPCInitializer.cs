@@ -14,7 +14,7 @@ namespace Assets.Scripts.Director
         [SerializeField] NavigationProvider navigation;
         [SerializeField] Transform npcContainer;
 
-        [SerializeField] CivAI civPrefab;
+        [SerializeField] CivAI[] civPrefabs;
 
         NavMeshData nm;
         NavMeshSurface nms;
@@ -36,7 +36,7 @@ namespace Assets.Scripts.Director
                 var randomPoint = new Vector3(Random.Range(-mapDimension, mapDimension), 0,
                     Random.Range(-mapDimension, mapDimension));
 
-                var civ = Instantiate(civPrefab, npcContainer);
+                var civ = Instantiate(civPrefabs.PickOne(), npcContainer);
                 civ.transform.position = randomPoint;
                 civ.Initialize(navigation);
                 civs.Add(civ);

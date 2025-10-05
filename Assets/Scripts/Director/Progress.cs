@@ -10,6 +10,7 @@ namespace Assets.Scripts.Director
         [SerializeField] TMP_Text roundLbl;
         [SerializeField] GameObject roundSign;
         [SerializeField] Clock clock;
+        [SerializeField] WeatherControl weather;
 
         int baseSoulGoal;
         float incrementPerRound;
@@ -48,6 +49,8 @@ namespace Assets.Scripts.Director
             roundSign.SetActive(true);
 
             clock.Restart();
+
+            weather.OnRoundChanged(currentRound);
         }
     }
 }
