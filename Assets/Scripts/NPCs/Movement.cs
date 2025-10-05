@@ -19,6 +19,12 @@ namespace Assets.Scripts.NPCs
             sprite.flipX = (agent.destination - transform.position).x > 0;
         }
 
+        public void Restart()
+        {
+            agent.enabled = true;
+            agent.isStopped = false;
+        }
+        
         public void Stop()
         {
             agent.SetDestination(transform.position);

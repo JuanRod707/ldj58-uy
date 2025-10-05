@@ -11,9 +11,10 @@ namespace Assets.Scripts.Player
 {
     public class RoamInput : MonoBehaviour
     {
-        [SerializeField] private PlayerInput input;
         
-        Character movement;
+        private PlayerInput input;
+        
+        Character character;
         SoulCollector soulCollector;
 
         public void FixedUpdate()
@@ -22,18 +23,27 @@ namespace Assets.Scripts.Player
             {
                 var inputVector = input.actions["Move"].ReadValue<Vector2>() *
                     (Time.fixedDeltaTime);
-                movement.MovePlayer(inputVector);
+                character.MovePlayer(inputVector);
             }
             else
-                movement.Stop();
+                character.Stop();
 
-            if(input.actions["Attack"].IsInProgress())
+            if (input.actions["Attack"].IsInProgress())
+            {
                 soulCollector.HoldAttack();
+                character.Attacking(true);
+            }
+
+            if (input.actions["Attack"].WasReleasedThisFrame())
+            {
+                character.Attacking(false);
+            }
         }
 
-        public void Initialize(Character character)
+        public void Initialize(Character character, PlayerInput input)
         {
-            this.movement = character;
+            this.input = input;
+            this.character = character;
             this.soulCollector = character.GetComponent<SoulCollector>();
         }
     }

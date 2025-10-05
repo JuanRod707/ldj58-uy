@@ -19,6 +19,9 @@ namespace Assets.Scripts.Config
         public float MinTimePerKill;
         public float MaxTimePerKill;
 
+        [Header("Enemies")] 
+        public int EnemiesCount;
+
         [Header("Entities")] 
         public float MinRiftInterval;
         public float MaxRiftInterval;

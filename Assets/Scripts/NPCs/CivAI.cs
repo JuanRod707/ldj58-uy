@@ -16,13 +16,13 @@ namespace Assets.Scripts.NPCs
     {
         [SerializeField] float minWait, maxWait;
         [SerializeField] float reachDistance;
-        [SerializeField] Movement movement;
+        [SerializeField] protected Movement movement;
         [SerializeField] private GameObject spriteObject;
         [SerializeField] Animator animator;
         
         Vector3 currentTargetPoint;
         NavigationProvider navigation;
-        public bool Alive { get; private set; }
+        public bool Alive { get; protected set; }
 
         public void Initialize(NavigationProvider navigation)
         {
@@ -31,7 +31,7 @@ namespace Assets.Scripts.NPCs
             StartCoroutine(WaitAndNavigate());
         }
 
-        IEnumerator WaitAndNavigate()
+        protected virtual IEnumerator WaitAndNavigate()
         {
             animator.SetBool("Walk", false);
             var interval = Random.Range(minWait, maxWait);
@@ -43,13 +43,13 @@ namespace Assets.Scripts.NPCs
             StartCoroutine(WaitForArrival());
         }
 
-        IEnumerator WaitForArrival()
+        protected virtual IEnumerator WaitForArrival()
         {
             yield return new WaitUntil(() => Vector3.Distance(transform.position, currentTargetPoint) < reachDistance);
             StartCoroutine(WaitAndNavigate());
         }
 
-        public void Kill()
+        public virtual void Kill()
         {
             animator.SetTrigger("Die");
             Alive = false;

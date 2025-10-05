@@ -11,20 +11,20 @@ namespace Assets.Scripts.Director
 
         [Header("Directors")]
         [SerializeField] NPCInitializer npcs;
+        [SerializeField] EnemyInitializer enemies;
         [SerializeField] private SoulProvider soulProvider;
         [SerializeField] PortalProvider portals;
         [SerializeField] Progress progress;
         [SerializeField] RiftProvider rifts;
-
-        [Header("PLAYER")]
-        [SerializeField] RoamInput roamInput;
-        [SerializeField] MinigameInput minigameInput;
+        [SerializeField] InputDirector inputDirector;
+        
         void Start()
         {   
-            npcs.Initialize(config);
+            npcs.Initialize(config.MapSize, config.NPCCount);
+            enemies.Initialize(config.MapSize, config.EnemiesCount);
+            inputDirector.Initialize(config, character);
+            character.Initialize(config, soulProvider, portals, inputDirector, enemies);
             soulProvider.Initialize(config, npcs);
-            character.Initialize(config, soulProvider, portals);
-            roamInput.Initialize(character);
 
             progress.Initialize(config);
             portals.Initialize();

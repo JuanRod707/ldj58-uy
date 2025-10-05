@@ -21,12 +21,12 @@ namespace Assets.Scripts.Director
         List<CivAI> civs = new List<CivAI>();
         float mapDimension;
 
-        public void Initialize(GameplayConfig config)
+        public void Initialize(float mapSize, int spawnAmount)
         {
-            mapDimension = config.MapSize;
+            mapDimension = mapSize;
 
             navigation.Initialize();
-            SpawnCivs(config.NPCCount);
+            SpawnCivs(spawnAmount);
         }
 
         void SpawnCivs(int npcAmount)
@@ -42,13 +42,9 @@ namespace Assets.Scripts.Director
                 civs.Add(civ);
             }
         }
+        
 
-        public CivAI GetClosestTo(Vector3 where, float maxDistance) =>
-            civs
-                .Where(c => Vector3.Distance(c.transform.position, where) < maxDistance)
-                .OrderBy(c => Vector3.Distance(c.transform.position, where))
-                .First();
-
+        public void Remove(CivAI civ) => civs.Remove(civ);
         public CivAI GetRandomAlive() => civs.Where(c => c.Alive).PickOne();
     }
 }

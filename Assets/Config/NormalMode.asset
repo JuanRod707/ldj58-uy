@@ -20,6 +20,7 @@ MonoBehaviour:
   NPCCount: 100
   MinTimePerKill: 5
   MaxTimePerKill: 10
+  EnemiesCount: 10
   MinRiftInterval: 20
   MaxRiftInterval: 30
   RiftIntervalCutPerRound: 0.15

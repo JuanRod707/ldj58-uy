@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using Assets.Scripts.Director;
 using Assets.Scripts.Config;
 
@@ -9,18 +10,30 @@ namespace Assets.Scripts.Player
         [SerializeField] UnityEngine.AI.NavMeshAgent agent;
         [SerializeField] SoulCollector collector;
         [SerializeField] Animator animator;
-        [SerializeField] SpriteRenderer sprite;
+        [SerializeField] SpriteRenderer sprite; 
+        [SerializeField] int combatDamage;
+        [SerializeField] private Battle battle;
+        [SerializeField] private float maxDistance;
 
         float baseSpeed;
         float speedCutPerSoul;
+        int health;
+        float currentStunTimeLeft;
+        InputDirector inputDirector;
+        
+        
+        public float CurrentSpeed => baseSpeed - (baseSpeed * speedCutPerSoul * collector.SoulCount); 
+        public int CombatDamage => combatDamage;
+        public Battle Battle => battle;
+        public float CollectDistance => maxDistance;
 
-        public float CurrentSpeed => baseSpeed - (baseSpeed * speedCutPerSoul * collector.SoulCount);
-
-        public void Initialize(GameplayConfig config, SoulProvider soulProvider, PortalProvider portals)
+        public void Initialize(GameplayConfig config, SoulProvider soulProvider, PortalProvider portals, InputDirector inputDirector, EnemyInitializer enemyProvider)
         {
+            this.inputDirector = inputDirector;
             baseSpeed = config.GrimmySpeed;
             speedCutPerSoul = config.GrimmySpeedCutPerSoul;
-            collector.Initialize(config, soulProvider, portals);
+            battle.Initialize(this, inputDirector,enemyProvider);
+            collector.Initialize(config, soulProvider, portals, battle, enemyProvider, maxDistance);
         }
 
         public void MovePlayer(Vector3 inputVector)
@@ -34,7 +47,26 @@ namespace Assets.Scripts.Player
             }
         }
 
+        public void Stun(float time)
+        {
+            StartCoroutine(StunnedCoroutine(time));
+        }
+
         public void Stop() => 
             animator.SetBool("Walking", false);
+
+        private IEnumerator StunnedCoroutine(float time)
+        {
+            animator.SetBool("Stun", true);
+            yield return new WaitForSeconds(time);
+            animator.SetBool("Stun", false);
+            
+            inputDirector.EnableRoam(true);
+        }
+
+        public void Attacking(bool attack)
+        {
+            animator.SetBool("Attacking", attack);
+        }
     }
 }
