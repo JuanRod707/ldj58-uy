@@ -1,0 +1,613 @@
+fileFormatVersion: 2
+guid: 70637f53a90d70946a41db6c98ec760a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: civy-die_0
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 2130
+        width: 149
+        height: 301
+      alignment: 9
+      pivot: {x: 0.49151355, y: 0.19543011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44b812bbc6f299418a744dd952da055
+      internalID: 1060459942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-die_1
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 2131
+        width: 147
+        height: 299
+      alignment: 9
+      pivot: {x: 0.44408765, y: 0.20756689}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6ad793baf0bd1488301a0a56f96d26
+      internalID: -2006979510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-die_2
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 2134
+        width: 167
+        height: 294
+      alignment: 9
+      pivot: {x: 0.4709926, y: 0.19044547}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18caf4d6635f2cf4193694e169f2beae
+      internalID: -1484021888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-die_3
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 2135
+        width: 175
+        height: 294
+      alignment: 9
+      pivot: {x: 0.474661, y: 0.18120466}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c2b761db03eeb84596cd852ea68c01f
+      internalID: -417842247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-die_4
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 2135
+        width: 176
+        height: 290
+      alignment: 9
+      pivot: {x: 0.4807767, y: 0.19374326}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8b769d10de2e04e9546d9f72eca360
+      internalID: 805740197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-die_5
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1658
+        width: 258
+        height: 231
+      alignment: 9
+      pivot: {x: 0.2967337, y: 0.20706454}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4895cd463c8be4e44b0a1104da99f3b0
+      internalID: -967331042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-die_6
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 1674
+        width: 276
+        height: 176
+      alignment: 9
+      pivot: {x: 0.22111467, y: 0.2741186}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a516e7afabefd4dbc2b9bf6b66e8f1
+      internalID: -1452956959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-die_7
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 1651
+        width: 283
+        height: 167
+      alignment: 9
+      pivot: {x: 0.20111321, y: 0.30753094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc15db6cb4ba61c4cb01cebbb465c53c
+      internalID: -1953097393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-die_8
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 1644
+        width: 286
+        height: 161
+      alignment: 9
+      pivot: {x: 0.20129095, y: 0.30561176}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5e296b9cdd40448b3d4ca1277b6d50
+      internalID: 981934568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-die_9
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 1588
+        width: 342
+        height: 130
+      alignment: 9
+      pivot: {x: 0.24525568, y: 0.5520517}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9134bb715c83e354daf2327f1746f93e
+      internalID: 378336824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-die_10
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1075
+        width: 320
+        height: 144
+      alignment: 9
+      pivot: {x: 0.24360165, y: 0.5352436}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4930695adf550439435b5db2ee3ac8
+      internalID: -259865499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-die_11
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 1075
+        width: 313
+        height: 148
+      alignment: 9
+      pivot: {x: 0.2459748, y: 0.54000604}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db16825266be244f93fed8783cf8f36
+      internalID: -1859571981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-die_12
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 1114
+        width: 315
+        height: 151
+      alignment: 9
+      pivot: {x: 0.25295797, y: 0.42717817}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9cbdbb591e3a84d973dd1de3e52134
+      internalID: 1873682547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-die_13
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 1141
+        width: 299
+        height: 155
+      alignment: 9
+      pivot: {x: 0.21710715, y: 0.3744865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4ccb976124c954898e92d959633c1f
+      internalID: 609992228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-die_14
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 1158
+        width: 290
+        height: 157
+      alignment: 9
+      pivot: {x: 0.19957739, y: 0.3437601}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208dd698599cef24e80b700db4ace8d4
+      internalID: 1928276002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-die_15
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 651
+        width: 285
+        height: 159
+      alignment: 9
+      pivot: {x: 0.19727473, y: 0.32976604}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95622fc3ab164314a90ac13b267c156a
+      internalID: -696145801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-die_16
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 654
+        width: 283
+        height: 161
+      alignment: 9
+      pivot: {x: 0.19513522, y: 0.32137284}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5135765b79435a74db232b7206ecab07
+      internalID: 792788151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-die_17
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 588
+        width: 336
+        height: 137
+      alignment: 9
+      pivot: {x: 0.2784678, y: 0.5061739}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1ff47aa87509945a75ef29dc29e55c
+      internalID: -60848173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-die_18
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 564
+        width: 344
+        height: 130
+      alignment: 9
+      pivot: {x: 0.23936, y: 0.558559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5589ba30edb7a43aba7f552411ccdf
+      internalID: -1974833600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-die_19
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 564
+        width: 320
+        height: 142
+      alignment: 9
+      pivot: {x: 0.2541748, y: 0.529783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e5ca4e479fcdd4e9daa8baa838bc4e
+      internalID: -1499545788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-die_20
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 51
+        width: 314
+        height: 148
+      alignment: 9
+      pivot: {x: 0.24408989, y: 0.54000616}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b902d6d0de736124ca84af7d93aed615
+      internalID: 1943533143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 198a9193878b96d48bfd83102d5b5a54
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      civy-die_0: 1060459942
+      civy-die_1: -2006979510
+      civy-die_10: -259865499
+      civy-die_11: -1859571981
+      civy-die_12: 1873682547
+      civy-die_13: 609992228
+      civy-die_14: 1928276002
+      civy-die_15: -696145801
+      civy-die_16: 792788151
+      civy-die_17: -60848173
+      civy-die_18: -1974833600
+      civy-die_19: -1499545788
+      civy-die_2: -1484021888
+      civy-die_20: 1943533143
+      civy-die_3: -417842247
+      civy-die_4: 805740197
+      civy-die_5: -967331042
+      civy-die_6: -1452956959
+      civy-die_7: -1953097393
+      civy-die_8: 981934568
+      civy-die_9: 378336824
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

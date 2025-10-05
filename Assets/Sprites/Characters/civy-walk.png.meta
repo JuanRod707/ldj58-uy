@@ -1,0 +1,797 @@
+fileFormatVersion: 2
+guid: d9e4bcbad497f314198d6d1817555265
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: civy-walk_0
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 2134
+        width: 149
+        height: 297
+      alignment: 9
+      pivot: {x: 0.5100833, y: 0.19902639}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df0d92dc61c9ab4d99da3ab90f4bf7f
+      internalID: -1742889593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_1
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 2134
+        width: 155
+        height: 288
+      alignment: 9
+      pivot: {x: 0.52560246, y: 0.19226837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf1b43ec53dfb54ca0d1570cfca811d
+      internalID: 1628861306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_2
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 2134
+        width: 156
+        height: 284
+      alignment: 9
+      pivot: {x: 0.49152082, y: 0.20190774}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373beb90f2aa57941bff41e0762c8b6d
+      internalID: -480842126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_3
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 2133
+        width: 158
+        height: 286
+      alignment: 9
+      pivot: {x: 0.4665118, y: 0.19936644}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591bcff5f16b2a3469163b6673809cca
+      internalID: 258506647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_4
+      rect:
+        serializedVersion: 2
+        x: 2226
+        y: 2134
+        width: 156
+        height: 283
+      alignment: 9
+      pivot: {x: 0.47456244, y: 0.19150546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9b4a8edb5dd8740a6651fcf34f06e9
+      internalID: -1182407749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_5
+      rect:
+        serializedVersion: 2
+        x: 2743
+        y: 2133
+        width: 149
+        height: 300
+      alignment: 9
+      pivot: {x: 0.4822449, y: 0.20457764}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a27145febdc8764c895702699a50fbb
+      internalID: 96289118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_6
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1621
+        width: 144
+        height: 306
+      alignment: 9
+      pivot: {x: 0.46325576, y: 0.20172478}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c917df9046d68c0428829343552fca8f
+      internalID: -2108591305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_7
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1621
+        width: 141
+        height: 309
+      alignment: 9
+      pivot: {x: 0.4249484, y: 0.21318217}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786e134953855ba4bab6635e88dabced
+      internalID: -189466351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_8
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1621
+        width: 140
+        height: 312
+      alignment: 9
+      pivot: {x: 0.4811035, y: 0.19898126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a282836437e2e46915333323c4a6ed
+      internalID: -459327086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_9
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 1620
+        width: 141
+        height: 313
+      alignment: 9
+      pivot: {x: 0.49061877, y: 0.19994298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38eac172d761e34428d3a0c2ba4445af
+      internalID: -768851077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_10
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 1618
+        width: 144
+        height: 306
+      alignment: 9
+      pivot: {x: 0.47244263, y: 0.19740166}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38eefad320618b545a1b3d760d263caa
+      internalID: 205931044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_11
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1620
+        width: 150
+        height: 301
+      alignment: 9
+      pivot: {x: 0.5, y: 0.20116457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabaa1bdbb43de64fbab855abe77ff50
+      internalID: -703944720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_12
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1108
+        width: 155
+        height: 302
+      alignment: 9
+      pivot: {x: 0.5375126, y: 0.20638937}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5fc663733592ef4c8e88a1201b48cc5
+      internalID: 1286542188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_13
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 1107
+        width: 158
+        height: 301
+      alignment: 9
+      pivot: {x: 0.53680074, y: 0.2102432}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b6c09a0f9b6d446aecd2b419b0f120
+      internalID: -1882266764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_14
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 1107
+        width: 158
+        height: 301
+      alignment: 9
+      pivot: {x: 0.5368003, y: 0.20058464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a57fbf98d80a6f84b99be8972fe46bbb
+      internalID: 323941146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_15
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 1107
+        width: 153
+        height: 289
+      alignment: 9
+      pivot: {x: 0.5, y: 0.19821177}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c7f1dcd193c2049b63ef00591f05dd
+      internalID: -1233708022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_16
+      rect:
+        serializedVersion: 2
+        x: 2226
+        y: 1107
+        width: 156
+        height: 286
+      alignment: 9
+      pivot: {x: 0.48136392, y: 0.20012873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dab9afcb2e4b6142bcf362de20f3e22
+      internalID: -204212818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_17
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1107
+        width: 154
+        height: 283
+      alignment: 9
+      pivot: {x: 0.5000016, y: 0.20208633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3dda780b061bc45b0abd45da3b9282
+      internalID: -795897561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_18
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 592
+        width: 156
+        height: 284
+      alignment: 9
+      pivot: {x: 0.46272817, y: 0.1928986}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158f8878a3caf264893cc32e0774d526
+      internalID: 1665673975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_19
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 594
+        width: 156
+        height: 283
+      alignment: 9
+      pivot: {x: 0.5093184, y: 0.21749565}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae893bdf198ffb4091e5dee76c0b689
+      internalID: -1881331238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_20
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 594
+        width: 149
+        height: 300
+      alignment: 9
+      pivot: {x: 0.45122185, y: 0.20443197}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c889b41d351164147b3479b6395668e2
+      internalID: 1493258295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_21
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 594
+        width: 144
+        height: 306
+      alignment: 9
+      pivot: {x: 0.4798118, y: 0.20547704}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81315bf97744e149901b1af957da885
+      internalID: -39342750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_22
+      rect:
+        serializedVersion: 2
+        x: 2235
+        y: 594
+        width: 144
+        height: 310
+      alignment: 9
+      pivot: {x: 0.44952732, y: 0.20927735}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8192f892ebd9a174b919811d04822ffe
+      internalID: 229575313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_23
+      rect:
+        serializedVersion: 2
+        x: 2748
+        y: 592
+        width: 142
+        height: 314
+      alignment: 9
+      pivot: {x: 0.48976502, y: 0.19446345}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36b5e5a49798d446a0f3b420b8d6515
+      internalID: -358915786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_24
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 79
+        width: 143
+        height: 315
+      alignment: 9
+      pivot: {x: 0.4593396, y: 0.23235038}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1a765442806bc4996e833f76222dec
+      internalID: -107235588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_25
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 81
+        width: 145
+        height: 306
+      alignment: 9
+      pivot: {x: 0.45990074, y: 0.20072648}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d9d2d0d2960cb4ea818393384a6ff2
+      internalID: -155489224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_26
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 82
+        width: 147
+        height: 303
+      alignment: 9
+      pivot: {x: 0.5, y: 0.20256068}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715e672ca74d7be478b31c598b946240
+      internalID: 1260722282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_27
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 85
+        width: 147
+        height: 299
+      alignment: 9
+      pivot: {x: 0.5098885, y: 0.19858176}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b059b219f0799df45bcf6c5e9b13c3be
+      internalID: -1534218232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-walk_28
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 90
+        width: 150
+        height: 294
+      alignment: 9
+      pivot: {x: 0.47092775, y: 0.17862281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2dbd338aafb7b947a4666f3f6409027
+      internalID: 1863596672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fd4ccce968b68104b943b8767d131193
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      civy-walk_0: -1742889593
+      civy-walk_1: 1628861306
+      civy-walk_10: 205931044
+      civy-walk_11: -703944720
+      civy-walk_12: 1286542188
+      civy-walk_13: -1882266764
+      civy-walk_14: 323941146
+      civy-walk_15: -1233708022
+      civy-walk_16: -204212818
+      civy-walk_17: -795897561
+      civy-walk_18: 1665673975
+      civy-walk_19: -1881331238
+      civy-walk_2: -480842126
+      civy-walk_20: 1493258295
+      civy-walk_21: -39342750
+      civy-walk_22: 229575313
+      civy-walk_23: -358915786
+      civy-walk_24: -107235588
+      civy-walk_25: -155489224
+      civy-walk_26: 1260722282
+      civy-walk_27: -1534218232
+      civy-walk_28: 1863596672
+      civy-walk_3: 258506647
+      civy-walk_4: -1182407749
+      civy-walk_5: 96289118
+      civy-walk_6: -2108591305
+      civy-walk_7: -189466351
+      civy-walk_8: -459327086
+      civy-walk_9: -768851077
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

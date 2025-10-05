@@ -1,0 +1,820 @@
+fileFormatVersion: 2
+guid: a670d559af6384a48901b21cac8ac1dc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: civy-idle_0
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 2121
+        width: 149
+        height: 310
+      alignment: 9
+      pivot: {x: 0.5, y: 0.23801899}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6685b140f74e8c8408a442e394623aea
+      internalID: 97711024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_1
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 2121
+        width: 148
+        height: 312
+      alignment: 9
+      pivot: {x: 0.51206106, y: 0.23683831}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d1e7d817a2adb49a27858834612742
+      internalID: -500861968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_2
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 2121
+        width: 148
+        height: 313
+      alignment: 9
+      pivot: {x: 0.49446726, y: 0.23317769}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2e1a5e579093c4d96a4070ab4d1be3
+      internalID: 1093752648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_3
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 2121
+        width: 149
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5088063, y: 0.24591626}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388fe36f0d304474280c7f878d90605b
+      internalID: 811560621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_4
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 2121
+        width: 150
+        height: 316
+      alignment: 9
+      pivot: {x: 0.49125162, y: 0.25087225}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc353547ddf5c094791bf5fc632bc206
+      internalID: -1364218396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_5
+      rect:
+        serializedVersion: 2
+        x: 2742
+        y: 2121
+        width: 148
+        height: 316
+      alignment: 9
+      pivot: {x: 0.5, y: 0.23011181}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db53c7d48e5f27742a570f958f8055a4
+      internalID: 1101622763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_6
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1609
+        width: 149
+        height: 318
+      alignment: 9
+      pivot: {x: 0.49119395, y: 0.23593505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dff30ff86e99c9489eca68d7601de04
+      internalID: 1007696445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_7
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 1609
+        width: 150
+        height: 318
+      alignment: 9
+      pivot: {x: 0.5174943, y: 0.23180884}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcdb203c87615494ca59e1edf87351c9
+      internalID: 670638900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_8
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 1609
+        width: 148
+        height: 321
+      alignment: 9
+      pivot: {x: 0.5, y: 0.23431529}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61345e1414acbe44ca0ebb3a0a9737f9
+      internalID: -1252809517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_9
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 1609
+        width: 150
+        height: 321
+      alignment: 9
+      pivot: {x: 0.5174943, y: 0.23431529}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58cf4c8ec57968b43846e714d68a95b5
+      internalID: 261755487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_10
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 1609
+        width: 150
+        height: 321
+      alignment: 9
+      pivot: {x: 0.49125162, y: 0.2424902}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141fdb12ce794d749904eb58c3800c84
+      internalID: 879238168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_11
+      rect:
+        serializedVersion: 2
+        x: 2742
+        y: 1609
+        width: 150
+        height: 321
+      alignment: 9
+      pivot: {x: 0.50874674, y: 0.23022804}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31917917aa350244b4dca1eadd447cc
+      internalID: 1752508027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_12
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1096
+        width: 150
+        height: 324
+      alignment: 9
+      pivot: {x: 0.5174941, y: 0.2246267}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff3575d4ab4825d43a4f3a1afc4ca621
+      internalID: 1860983761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_13
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 1096
+        width: 150
+        height: 324
+      alignment: 9
+      pivot: {x: 0.49125284, y: 0.23272592}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcec3a79d8b4cde45bd348831aa3c5c0
+      internalID: 171349260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_14
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 1096
+        width: 150
+        height: 321
+      alignment: 9
+      pivot: {x: 0.49125245, y: 0.24657784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d2710256421294fa02d6a168c6c9bd
+      internalID: 740164051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_15
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 1096
+        width: 150
+        height: 321
+      alignment: 9
+      pivot: {x: 0.4825057, y: 0.25475276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134e059e408bbed4b89bb014df7459e9
+      internalID: -1083144661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_16
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 1096
+        width: 151
+        height: 321
+      alignment: 9
+      pivot: {x: 0.5, y: 0.23431529}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb752553fd29bc4b87062a03ce1fddc
+      internalID: -1357550043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_17
+      rect:
+        serializedVersion: 2
+        x: 2742
+        y: 1096
+        width: 150
+        height: 321
+      alignment: 9
+      pivot: {x: 0.47375813, y: 0.23840293}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15fa85a5a64a204dba30045d4203977
+      internalID: 1244370574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_18
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 585
+        width: 149
+        height: 319
+      alignment: 9
+      pivot: {x: 0.49119395, y: 0.24087572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008e635d6e3986f4bbcac5739dbe3af7
+      internalID: 937158728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_19
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 585
+        width: 150
+        height: 318
+      alignment: 9
+      pivot: {x: 0.49125284, y: 0.24418707}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b6b2f6b754c834c965d1d725409c40
+      internalID: -1511981307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_20
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 585
+        width: 148
+        height: 316
+      alignment: 9
+      pivot: {x: 0.50886494, y: 0.23841588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef691f043eb87494b908bd1882ca3ff0
+      internalID: 118939322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_21
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 585
+        width: 149
+        height: 316
+      alignment: 9
+      pivot: {x: 0.5, y: 0.23426375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24684d0862e20348a8c4b2046ca8dd7
+      internalID: -2020923054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_22
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 585
+        width: 150
+        height: 315
+      alignment: 9
+      pivot: {x: 0.47375813, y: 0.24591587}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4941ed8c4f5db3c42934e15d45875867
+      internalID: -1449550098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_23
+      rect:
+        serializedVersion: 2
+        x: 2742
+        y: 585
+        width: 148
+        height: 315
+      alignment: 9
+      pivot: {x: 0.46453857, y: 0.23758526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325e62941e0e45f4997bb7096699e662
+      internalID: -1908365459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_24
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 72
+        width: 149
+        height: 315
+      alignment: 9
+      pivot: {x: 0.47358212, y: 0.2375852}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02686c82c259fe047b28373e5a257333
+      internalID: -1761821558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_25
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 72
+        width: 150
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25008115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23bcec7bcfedfab4696040782cbb2486
+      internalID: -1930001270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_26
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 72
+        width: 148
+        height: 313
+      alignment: 9
+      pivot: {x: 0.49113423, y: 0.2484845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f1b937e8deb324aa70ec0b7cbb7d4e
+      internalID: 351793530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_27
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 72
+        width: 149
+        height: 312
+      alignment: 9
+      pivot: {x: 0.51761174, y: 0.22665142}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45052810f5e03a847875716bb641e077
+      internalID: -1635453421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_28
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 72
+        width: 148
+        height: 312
+      alignment: 9
+      pivot: {x: 0.49113506, y: 0.24347286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4194afb98413b142bf0eb6ab05faf0e
+      internalID: 133708961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civy-idle_29
+      rect:
+        serializedVersion: 2
+        x: 2742
+        y: 72
+        width: 147
+        height: 312
+      alignment: 9
+      pivot: {x: 0.4910731, y: 0.24767822}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594c27c282c3a1749849a7276c3cc5af
+      internalID: -976975046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 246010aef001f7741875e5fc73c30c81
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      civy-idle_0: 97711024
+      civy-idle_1: -500861968
+      civy-idle_10: 879238168
+      civy-idle_11: 1752508027
+      civy-idle_12: 1860983761
+      civy-idle_13: 171349260
+      civy-idle_14: 740164051
+      civy-idle_15: -1083144661
+      civy-idle_16: -1357550043
+      civy-idle_17: 1244370574
+      civy-idle_18: 937158728
+      civy-idle_19: -1511981307
+      civy-idle_2: 1093752648
+      civy-idle_20: 118939322
+      civy-idle_21: -2020923054
+      civy-idle_22: -1449550098
+      civy-idle_23: -1908365459
+      civy-idle_24: -1761821558
+      civy-idle_25: -1930001270
+      civy-idle_26: 351793530
+      civy-idle_27: -1635453421
+      civy-idle_28: 133708961
+      civy-idle_29: -976975046
+      civy-idle_3: 811560621
+      civy-idle_4: -1364218396
+      civy-idle_5: 1101622763
+      civy-idle_6: 1007696445
+      civy-idle_7: 670638900
+      civy-idle_8: -1252809517
+      civy-idle_9: 261755487
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

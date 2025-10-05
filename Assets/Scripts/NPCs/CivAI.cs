@@ -18,6 +18,7 @@ namespace Assets.Scripts.NPCs
         [SerializeField] float reachDistance;
         [SerializeField] Movement movement;
         [SerializeField] private GameObject spriteObject;
+        [SerializeField] Animator animator;
         
         Vector3 currentTargetPoint;
         NavigationProvider navigation;
@@ -32,11 +33,13 @@ namespace Assets.Scripts.NPCs
 
         IEnumerator WaitAndNavigate()
         {
+            animator.SetBool("Walk", false);
             var interval = Random.Range(minWait, maxWait);
             yield return new WaitForSeconds(interval);
 
             currentTargetPoint = navigation.GetRandomPoint().position;
             movement.GoTo(currentTargetPoint);
+            animator.SetBool("Walk", true);
             StartCoroutine(WaitForArrival());
         }
 
@@ -48,9 +51,10 @@ namespace Assets.Scripts.NPCs
 
         public void Kill()
         {
+            animator.SetTrigger("Die");
             Alive = false;
             StopAllCoroutines();
-            gameObject.SetActive(false);
+            movement.Stop();
         }
     }
 }
