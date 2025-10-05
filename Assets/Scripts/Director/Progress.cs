@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Config;
+﻿using Assets.Scripts.Audio;
+using Assets.Scripts.Config;
 using TMPro;
 using UnityEngine;
 
@@ -10,7 +11,10 @@ namespace Assets.Scripts.Director
         [SerializeField] TMP_Text roundLbl;
         [SerializeField] GameObject roundSign;
         [SerializeField] Clock clock;
+
+        [Header("Feedback")]
         [SerializeField] WeatherControl weather;
+        [SerializeField] MusicPlayer musicPlayer;
 
         int baseSoulGoal;
         float incrementPerRound;
@@ -51,6 +55,7 @@ namespace Assets.Scripts.Director
             clock.Restart();
 
             weather.OnRoundChanged(currentRound);
+            musicPlayer.OnRoundChanged(currentRound);
         }
     }
 }

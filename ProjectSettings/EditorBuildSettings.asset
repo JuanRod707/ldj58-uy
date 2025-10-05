@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 0ae58c4db4d663d479c89b05294ba5d8
   - enabled: 1
-    path: Assets/Scenes/JuanchoTestScene.unity
-    guid: 40d41ab90bd5d73478e99e14ac612e17
+    path: Assets/Scenes/City.unity
+    guid: ff004d6161f5c1149a964b93d483c0ab
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

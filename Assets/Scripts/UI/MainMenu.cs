@@ -11,7 +11,7 @@ namespace Assets.Scripts.UI
 
         void Start()
         {
-            newGameBtn.onClick.AddListener(() => SceneManager.LoadScene("JuanchoTestScene"));
+            newGameBtn.onClick.AddListener(() => SceneManager.LoadScene("City"));
             exitBtn.onClick.AddListener(() => Application.Quit());
         }
     }

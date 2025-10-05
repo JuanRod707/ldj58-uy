@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: NormalMode
   m_EditorClassIdentifier: 
   GrimmySpeed: 8
-  GrimmySpeedCutPerSoul: 0.15
+  GrimmySpeedCutPerSoul: 0.07
   BaseSoulGoal: 10
-  GoalStretchPerRound: 1.7
-  RoundTime: 120
-  NPCCount: 100
+  GoalStretchPerRound: 0.35
+  RoundTime: 300
+  NPCCount: 75
   MinTimePerKill: 5
   MaxTimePerKill: 10
   EnemiesCount: 10
-  MinRiftInterval: 20
-  MaxRiftInterval: 30
+  MinRiftInterval: 15
+  MaxRiftInterval: 25
   RiftIntervalCutPerRound: 0.15
-  RiftPullDistance: 4
-  PortalPullDistance: 3
-  MapSize: 50
+  RiftPullDistance: 8
+  PortalPullDistance: 5
+  MapSize: 45
