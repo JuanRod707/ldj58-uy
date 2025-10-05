@@ -14,7 +14,7 @@ namespace Assets.Scripts.Player
     public class SoulCollector : MonoBehaviour
     {
         [SerializeField] float deliveryCooldown;
-        [SerializeField] private DeathLaser deathLaser;
+        [SerializeField] private DeathLaser deathLaser; 
         [SerializeField] private float killCooldown;
         [SerializeField] private int damagePerCooldown;
         [SerializeField] Animator animator;
@@ -72,15 +72,13 @@ namespace Assets.Scripts.Player
         }
 
         public void HoldAttack()
-        {
-            if (!AnySoulInRange) return;
-            
+        { 
             if (EnemyInRange)
             {
                 battle.StartCombat();
             }
             
-            if (currentDamageCooldown >= killCooldown)
+            if (AnySoulInRange && currentDamageCooldown >= killCooldown)
             { 
                 Soul soul = soulProvider.GetClosestTo(transform.position);
                 
