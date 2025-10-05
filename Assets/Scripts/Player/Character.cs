@@ -12,26 +12,17 @@ namespace Assets.Scripts.Player
     {
         [SerializeField] private Stats stats;
         [SerializeField] private UnityEngine.AI.NavMeshAgent agent;
-        [SerializeField] private PlayerInput playerInput;
         [SerializeField] SoulCollector collector;
         
         public void Initialize(SoulProvider soulProvider, PortalProvider portals)
         {  
-            collector.Initialize(soulProvider, portals, playerInput);
+            collector.Initialize(soulProvider, portals);
         }
         
-        public void FixedUpdate() => 
-            MovePlayer();
-
-
-        private void MovePlayer()
+        public void MovePlayer(Vector3 inputVector)
         {
-            if (playerInput.actions["Move"].IsPressed())
-            {
-                Vector3 inputVector = playerInput.actions["Move"].ReadValue<Vector2>() *
-                                      (Time.fixedDeltaTime * (stats.GetTotalSpeed));
-                agent.Move(new Vector3(inputVector.x, 0, inputVector.y));
-            }
+
+                agent.Move(new Vector3(inputVector.x, 0, inputVector.y) * stats.GetTotalSpeed);
         }
     }
 }

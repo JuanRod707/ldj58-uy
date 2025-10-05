@@ -24,18 +24,16 @@ namespace Assets.Scripts.Player
         PlayerInput input;
         float currentDamageCooldown;
 
-        public void Initialize(SoulProvider soulProvider, PortalProvider portals, PlayerInput input)
+        public void Initialize(SoulProvider soulProvider, PortalProvider portals)
         {
             this.portals = portals;
             this.soulProvider = soulProvider;
-            this.input = input;
 
             lastInLine = transform;
         }
 
         void Update()
         {
-            HandleInput();
             DetectPortal();
 
             if (currentDamageCooldown < killCooldown)
@@ -61,12 +59,13 @@ namespace Assets.Scripts.Player
             }
         }
 
-        void HandleInput()
+        public void HoldAttack()
         {
-            if (input.actions["Attack"].IsInProgress() 
-                && AnySoulInRange 
-                && currentDamageCooldown >= killCooldown)
+            if (AnySoulInRange && currentDamageCooldown >= killCooldown)
             { 
+                //hablar con el enemy provider para saber si ese alma tiene algun enemigo cerca, si es asi llamar a 
+                //"ENTIDAD AUN DESCONOCIDA" para cambiar el input manejado
+
                 Soul soul = soulProvider.GetClosestTo(transform.position);
                 
                 deathLaser.ThrowLaser(soul.transform.position, killCooldown);

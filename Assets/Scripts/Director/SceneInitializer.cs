@@ -5,15 +5,23 @@ namespace Assets.Scripts.Director
 {
     public class SceneInitializer : MonoBehaviour
     {
+        [SerializeField] private Character character;
+
+        [Header("Directors")]
         [SerializeField] NPCInitializer npcs;
-        [SerializeField] private Character player;
         [SerializeField] private SoulProvider soulProvider;
         [SerializeField] PortalProvider portals;
+
+        [Header("PLAYER")]
+        [SerializeField] RoamInput roamInput;
+        [SerializeField] MinigameInput minigameInput;
         void Start()
         {   
             npcs.Initialize();
             soulProvider.Initialize(npcs);
-            player.Initialize(soulProvider, portals);
+            character.Initialize(soulProvider, portals);
+
+            roamInput.Initialize(character);
         }
     }
 }
