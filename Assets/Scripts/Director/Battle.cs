@@ -2,18 +2,21 @@
 using Assets.Scripts.Director;
 using Assets.Scripts.NPCs;
 using Assets.Scripts.Player;
+using Assets.Scripts.UI;
 using UnityEngine;
 
 public class Battle : MonoBehaviour
 {
-    [SerializeField] private int maxBattleEngage = 100;
+    [SerializeField] BattlePanel panel;
+    [SerializeField] float characterDamage;
+    [SerializeField] float enemyDamage;
     
     private Character character;
     private EnemyAI enemy;
     private InputDirector inputDirector;
     private EnemyInitializer enemyProvider;
 
-    private float currentBattleEnage;
+    private float battleProgress;
     private float currentEnemyAttackTime;
     
     public void Initialize(Character character, InputDirector inputDirector, EnemyInitializer enemyProvider)
@@ -33,20 +36,22 @@ public class Battle : MonoBehaviour
         enemy.EnterCombat(transform.position);
         
         currentEnemyAttackTime = enemy.AttackTime;
-        currentBattleEnage = maxBattleEngage/2;
+        battleProgress = 0.5f;
         enabled = true;
         character.Attacking(true);
+
+        panel.Show();
+        panel.UpdateBattle(battleProgress);
     }
 
     public void AttackEnemy()
     {
         if (!enemy) return;
 
-        currentBattleEnage += character.CombatDamage;
+        battleProgress += characterDamage;
         
-        if (currentBattleEnage >= maxBattleEngage)
+        if (battleProgress >= 1)
         { 
-            Debug.Log("Won Battle");
             enabled = false;
             
             enemyProvider.Remove(enemy);
@@ -54,32 +59,34 @@ public class Battle : MonoBehaviour
             
             inputDirector.EnableMinigame(false);
             inputDirector.EnableRoam(true);
+            panel.Hide();
         }
     }
 
     private void Update()
     {
-        if(!enemy) return;
+        if (!enemy) return;
 
-        if (currentBattleEnage <= 0)
+        if (battleProgress <= 0)
         {
             character.Stun(enemy.StunTime);
             inputDirector.EnableMinigame(false);
             enemy.Move();
             enemy = null;
-            {
-                Debug.Log("Enemy stunned");
-            }
+            panel.Hide();
         }
 
-        EnemyAttack();
+        panel.UpdateBattle(battleProgress);
+
+        if (enemy)
+            EnemyAttack();
     }
 
     private void EnemyAttack()
     {
         if (currentEnemyAttackTime >= enemy.AttackTime)
         {
-            currentBattleEnage -= enemy.AttackAmount;
+            battleProgress -= enemyDamage;
             currentEnemyAttackTime = 0;
         }
         else

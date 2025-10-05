@@ -261,7 +261,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3595aa0b1bf54730a17fae39f1003dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxBattleEngage: 100
+  panel: {fileID: 0}
+  characterDamage: 0.04
+  enemyDamage: 0.03
 --- !u!1 &9166027784676706854
 GameObject:
   m_ObjectHideFlags: 0

@@ -72,14 +72,12 @@ namespace Assets.Scripts.Player
         }
 
         public void HoldAttack()
-        { 
-            if (EnemyInRange)
-            {
-                battle.StartCombat();
-            }
-            
+        {
             if (AnySoulInRange && currentDamageCooldown >= killCooldown)
-            { 
+            {
+                if (EnemyInRange) 
+                    battle.StartCombat();
+
                 Soul soul = soulProvider.GetClosestTo(transform.position);
                 
                 if (soul.CurrentHealth > 0)
