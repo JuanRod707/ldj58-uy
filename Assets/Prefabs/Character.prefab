@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 2411396603745762141}
   - component: {fileID: 3077132834131255560}
   - component: {fileID: 1876125806840357689}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,10 +316,10 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 776a035d2ffe4e8478a46c648cae201d, type: 2}
+  - {fileID: 2100000, guid: 667332a82afc3d243b5c3827a77bf3b5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -4,6 +4,8 @@ namespace Assets.Scripts.NPCs
 {
     public class LineFollow : MonoBehaviour
     {
+        [SerializeField] SpriteRenderer sprite;
+
         private Transform target;
         double maxDistance;
         float minDistance;
@@ -16,6 +18,7 @@ namespace Assets.Scripts.NPCs
             {
                 transform.position = target.position +
                                      (transform.position - target.position).normalized * minDistance;
+                sprite.flipX = (target.position - transform.position).x < 0;
             }
 
         }
