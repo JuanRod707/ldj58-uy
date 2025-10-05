@@ -14,7 +14,7 @@ namespace Assets.Scripts.Player
     public class SoulCollector : MonoBehaviour
     {
         [SerializeField] float deliveryCooldown;
-        [SerializeField] private DeathLaser deathLaser; 
+        [SerializeField] private DeathLaser deathLaser;
         [SerializeField] private float killCooldown;
         [SerializeField] private int damagePerCooldown;
         [SerializeField] Animator animator;
