@@ -34,20 +34,21 @@ namespace Assets.Scripts.NPCs
         public void DeliverToPortal(Portal portal)
         {
             follow.enabled = false;
-            StartCoroutine(DeliverSoulTo(portal.transform));
+            StartCoroutine(DeliverSoulTo(portal));
         }
 
-        IEnumerator DeliverSoulTo(Transform portal)
+        IEnumerator DeliverSoulTo(Portal portal)
         {
-            var startingDistance = Vector3.Distance(transform.position, portal.position);
+            var startingDistance = Vector3.Distance(transform.position, portal.transform.position);
 
-            while (Vector3.Distance(transform.position, portal.position) > 0.1f)
+            while (Vector3.Distance(transform.position, portal.transform.position) > 0.1f)
             {
-                transform.position = Vector3.Lerp(transform.position, portal.position, suctionFactor);
-                transform.localScale = Vector3.one * Vector3.Distance(transform.position, portal.position) / startingDistance;
+                transform.position = Vector3.Lerp(transform.position, portal.transform.position, suctionFactor);
+                transform.localScale = Vector3.one * Vector3.Distance(transform.position, portal.transform.position) / startingDistance;
                 yield return null;
             }
 
+            portal.OnSoulDelivered();
             Destroy(gameObject);
         }
     }

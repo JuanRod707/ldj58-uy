@@ -11,6 +11,7 @@ namespace Assets.Scripts.Director
         [SerializeField] NPCInitializer npcs;
         [SerializeField] private SoulProvider soulProvider;
         [SerializeField] PortalProvider portals;
+        [SerializeField] Progress progress;
 
         [Header("PLAYER")]
         [SerializeField] RoamInput roamInput;
@@ -20,8 +21,10 @@ namespace Assets.Scripts.Director
             npcs.Initialize();
             soulProvider.Initialize(npcs);
             character.Initialize(soulProvider, portals);
-
             roamInput.Initialize(character);
+
+            progress.Initialize();
+            portals.Initialize();
         }
     }
 }

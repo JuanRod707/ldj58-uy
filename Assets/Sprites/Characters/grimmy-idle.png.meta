@@ -1,0 +1,820 @@
+fileFormatVersion: 2
+guid: 331d4dbb2a3feb947b6bdb02d820b2de
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: grimmy-idle_0
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 2179
+        width: 339
+        height: 249
+      alignment: 9
+      pivot: {x: 0.6482235, y: 0.03586514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9a2c435874a0a499443123b2728634
+      internalID: 1895246913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_1
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 2179
+        width: 337
+        height: 248
+      alignment: 9
+      pivot: {x: 0.643139, y: 0.038045574}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8772a789457bb1d4fb367ce51640ef2c
+      internalID: -1887235610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_2
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 2179
+        width: 338
+        height: 246
+      alignment: 9
+      pivot: {x: 0.6397423, y: 0.038374737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd0a9856c72e5b4fa6b734946059cb0
+      internalID: 940350714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_3
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 2179
+        width: 339
+        height: 243
+      alignment: 9
+      pivot: {x: 0.65415245, y: 0.045082625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73cae373afb1e5e4fb6a56778e460c9b
+      internalID: -1687367118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_4
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 2179
+        width: 337
+        height: 242
+      alignment: 9
+      pivot: {x: 0.640157, y: 0.039049383}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a6def84ce23734a9d5b320fb08a673
+      internalID: -1051014201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_5
+      rect:
+        serializedVersion: 2
+        x: 2611
+        y: 2179
+        width: 338
+        height: 240
+      alignment: 9
+      pivot: {x: 0.64866215, y: 0.05195821}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8022552b7577a7d48a5738bfb09920f6
+      internalID: -1042955820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_6
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1668
+        width: 338
+        height: 241
+      alignment: 9
+      pivot: {x: 0.64568865, y: 0.0538168}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1a07239edd2124cbc4a28e1e842ad2
+      internalID: -1520749338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_7
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 1668
+        width: 337
+        height: 240
+      alignment: 9
+      pivot: {x: 0.640157, y: 0.04777069}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adfc03dd32d396e4d97529f64e9b2b23
+      internalID: -647483132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_8
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 1668
+        width: 338
+        height: 238
+      alignment: 9
+      pivot: {x: 0.6456888, y: 0.043970443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a7142be281374429ccbfd8be9f0321
+      internalID: 1051889537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_9
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 1668
+        width: 339
+        height: 240
+      alignment: 9
+      pivot: {x: 0.64525896, y: 0.03939616}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5872cd67342f94284b01678b7110a3
+      internalID: -1453193915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_10
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1668
+        width: 337
+        height: 240
+      alignment: 9
+      pivot: {x: 0.6520851, y: 0.04358317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a313d753718e24a4a8eec8848158d262
+      internalID: -1331183305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_11
+      rect:
+        serializedVersion: 2
+        x: 2611
+        y: 1668
+        width: 338
+        height: 240
+      alignment: 9
+      pivot: {x: 0.65163517, y: 0.04777069}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d7c5b98e35dfb46afdfe49ae3a331a
+      internalID: -1883546939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_12
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1155
+        width: 339
+        height: 241
+      alignment: 9
+      pivot: {x: 0.6498521, y: 0.0555116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f66dddbbf742c42a47671836252cbf
+      internalID: -1846840681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_13
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 1155
+        width: 337
+        height: 241
+      alignment: 9
+      pivot: {x: 0.65074146, y: 0.06009405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3212b8822af089242b26118a7237f4d8
+      internalID: 26972112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_14
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 1155
+        width: 338
+        height: 241
+      alignment: 9
+      pivot: {x: 0.65356266, y: 0.0555116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30de71c9d60040f41851d4b533afde88
+      internalID: -1823358124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_15
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 1155
+        width: 339
+        height: 243
+      alignment: 9
+      pivot: {x: 0.6482236, y: 0.053353265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c29b175bdbad2643901f6b122fb694d
+      internalID: 2005607691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_16
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1155
+        width: 337
+        height: 243
+      alignment: 9
+      pivot: {x: 0.65506697, y: 0.049217947}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9197f1d001d198e419f458343aebe78c
+      internalID: -1118348701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_17
+      rect:
+        serializedVersion: 2
+        x: 2613
+        y: 1155
+        width: 336
+        height: 246
+      alignment: 9
+      pivot: {x: 0.6435649, y: 0.054715287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed124bb113fd094d8b7e2ee6d4758f2
+      internalID: 155641997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_18
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 643
+        width: 338
+        height: 245
+      alignment: 9
+      pivot: {x: 0.6437608, y: 0.049246404}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e05879f295a54408758cfc608dec38
+      internalID: 372020467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_19
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 643
+        width: 337
+        height: 248
+      alignment: 9
+      pivot: {x: 0.6474644, y: 0.0457931}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95755b3b0a693dc4fac61ecdfd4d6c49
+      internalID: -110686679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_20
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 643
+        width: 336
+        height: 248
+      alignment: 9
+      pivot: {x: 0.6479031, y: 0.050245963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a19c246103d6f4b8dca4ba9b39971f
+      internalID: -1710753330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_21
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 643
+        width: 339
+        height: 248
+      alignment: 9
+      pivot: {x: 0.64659387, y: 0.050245963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464d2152d8996d24a943a0f1fee9574c
+      internalID: 1920844348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_22
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 643
+        width: 337
+        height: 248
+      alignment: 9
+      pivot: {x: 0.64418715, y: 0.050245963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e689e66c07f62c4ebd6564ba0c243c7
+      internalID: -841045304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_23
+      rect:
+        serializedVersion: 2
+        x: 2611
+        y: 643
+        width: 338
+        height: 248
+      alignment: 9
+      pivot: {x: 0.65029454, y: 0.050245963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b96e7ced36fa942be866595ce81569
+      internalID: 1662196496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_24
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 132
+        width: 339
+        height: 246
+      alignment: 9
+      pivot: {x: 0.6498521, y: 0.05107892}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66ed4b142d270c46ad96b4c0ccdc2b4
+      internalID: 860808981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_25
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 132
+        width: 337
+        height: 247
+      alignment: 9
+      pivot: {x: 0.64091045, y: 0.052896414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c819959e18fc2ab4ebaddc95dbb2e77f
+      internalID: -1531009754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_26
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 132
+        width: 338
+        height: 247
+      alignment: 9
+      pivot: {x: 0.65356266, y: 0.048425343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22db8188a81c87248911e6dbda972218
+      internalID: 819956581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_27
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 132
+        width: 339
+        height: 247
+      alignment: 9
+      pivot: {x: 0.64659387, y: 0.04395433}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b0a68b90eb02c4da12bb24fd1509a8
+      internalID: 1637569111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_28
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 132
+        width: 337
+        height: 247
+      alignment: 9
+      pivot: {x: 0.64746386, y: 0.04395433}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce31f3fd670df2f4e93f6e7076f8aafd
+      internalID: -447157877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-idle_29
+      rect:
+        serializedVersion: 2
+        x: 2611
+        y: 132
+        width: 338
+        height: 247
+      alignment: 9
+      pivot: {x: 0.65029454, y: 0.048425343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b4f458d90424b439cd1f675779576c
+      internalID: -1647502761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c72a15929c71b7242bd0630b651e6e43
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      grimmy-idle_0: 1895246913
+      grimmy-idle_1: -1887235610
+      grimmy-idle_10: -1331183305
+      grimmy-idle_11: -1883546939
+      grimmy-idle_12: -1846840681
+      grimmy-idle_13: 26972112
+      grimmy-idle_14: -1823358124
+      grimmy-idle_15: 2005607691
+      grimmy-idle_16: -1118348701
+      grimmy-idle_17: 155641997
+      grimmy-idle_18: 372020467
+      grimmy-idle_19: -110686679
+      grimmy-idle_2: 940350714
+      grimmy-idle_20: -1710753330
+      grimmy-idle_21: 1920844348
+      grimmy-idle_22: -841045304
+      grimmy-idle_23: 1662196496
+      grimmy-idle_24: 860808981
+      grimmy-idle_25: -1531009754
+      grimmy-idle_26: 819956581
+      grimmy-idle_27: 1637569111
+      grimmy-idle_28: -447157877
+      grimmy-idle_29: -1647502761
+      grimmy-idle_3: -1687367118
+      grimmy-idle_4: -1051014201
+      grimmy-idle_5: -1042955820
+      grimmy-idle_6: -1520749338
+      grimmy-idle_7: -647483132
+      grimmy-idle_8: 1051889537
+      grimmy-idle_9: -1453193915
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

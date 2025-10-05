@@ -1,0 +1,475 @@
+fileFormatVersion: 2
+guid: 5b1b6fbae32640741a5a77b7880d8873
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: grimmy-walk_0
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1669
+        width: 339
+        height: 247
+      alignment: 9
+      pivot: {x: 0.6165615, y: 0.034612123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f87d905a72c2844c975cc606073b7ba
+      internalID: -166035369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-walk_1
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 1669
+        width: 339
+        height: 243
+      alignment: 9
+      pivot: {x: 0.6271578, y: 0.03680646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48143926593959d4fbd9f415693bf718
+      internalID: 1269979644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-walk_2
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 1668
+        width: 340
+        height: 243
+      alignment: 9
+      pivot: {x: 0.626784, y: 0.03680646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3113998166dd4f0449af072b9e7a163d
+      internalID: -818078372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-walk_3
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 1669
+        width: 341
+        height: 241
+      alignment: 9
+      pivot: {x: 0.61938906, y: 0.04786777}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b90e29e77e4824b8798861bf71b00f
+      internalID: 970012702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-walk_4
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1158
+        width: 344
+        height: 240
+      alignment: 9
+      pivot: {x: 0.61486727, y: 0.04598389}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412b429bc8d03934492c6d06af9fd28d
+      internalID: 535113142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-walk_5
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 1158
+        width: 348
+        height: 239
+      alignment: 9
+      pivot: {x: 0.60322446, y: 0.049094226}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6dd0272a1e50b24ba83da7280a9c6d6
+      internalID: 1711865929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-walk_6
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 1159
+        width: 351
+        height: 238
+      alignment: 9
+      pivot: {x: 0.6057536, y: 0.05223122}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91f351b48c3a6e478fc715d1b65f512
+      internalID: -1311153230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-walk_7
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 1160
+        width: 354
+        height: 237
+      alignment: 9
+      pivot: {x: 0.6014746, y: 0.040236846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d9d9229da59234b88d8326936fbcbf
+      internalID: 516332873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-walk_8
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 647
+        width: 352
+        height: 240
+      alignment: 9
+      pivot: {x: 0.59864974, y: 0.050973255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70aa4a36ca324ce45a5114dbe0156c31
+      internalID: -1763931048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-walk_9
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 647
+        width: 350
+        height: 243
+      alignment: 9
+      pivot: {x: 0.60947686, y: 0.046661504}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c4da0aaf3ac8a46b0ddaac8e8e8eff
+      internalID: -1204555293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-walk_10
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 646
+        width: 349
+        height: 246
+      alignment: 9
+      pivot: {x: 0.6097905, y: 0.05219027}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502c71567aab23b40b6ae68aead071c6
+      internalID: 1258150312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-walk_11
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 646
+        width: 346
+        height: 246
+      alignment: 9
+      pivot: {x: 0.61420316, y: 0.057057697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69162653cc0f20c46b9dcc84745d8d40
+      internalID: 1631978411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-walk_12
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 134
+        width: 343
+        height: 245
+      alignment: 9
+      pivot: {x: 0.6221841, y: 0.040587757}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130c834c8bd96e44ba86b6b72794ba07
+      internalID: -283230768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-walk_13
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 133
+        width: 341
+        height: 247
+      alignment: 9
+      pivot: {x: 0.61938924, y: 0.05885111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06dea72fdcbf5714c9e6ed6131b7324d
+      internalID: -126646334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-walk_14
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 133
+        width: 339
+        height: 247
+      alignment: 9
+      pivot: {x: 0.6165613, y: 0.034612123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c12a62500b0bd9447845731da4766812
+      internalID: 1932932197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c77374001db38ee45916b5d09dddcc63
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      grimmy-walk_0: -166035369
+      grimmy-walk_1: 1269979644
+      grimmy-walk_10: 1258150312
+      grimmy-walk_11: 1631978411
+      grimmy-walk_12: -283230768
+      grimmy-walk_13: -126646334
+      grimmy-walk_14: 1932932197
+      grimmy-walk_2: -818078372
+      grimmy-walk_3: 970012702
+      grimmy-walk_4: 535113142
+      grimmy-walk_5: 1711865929
+      grimmy-walk_6: -1311153230
+      grimmy-walk_7: 516332873
+      grimmy-walk_8: -1763931048
+      grimmy-walk_9: -1204555293
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

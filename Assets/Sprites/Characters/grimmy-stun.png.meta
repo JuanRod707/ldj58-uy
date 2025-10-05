@@ -1,0 +1,1086 @@
+fileFormatVersion: 2
+guid: 1001e0af8c3c0744cb8cfb23f69e407e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: grimmy-stun_0
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 2692
+        width: 339
+        height: 247
+      alignment: 9
+      pivot: {x: 0.6334612, y: 0.03784575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ada6138efbe0d243b0ad4641c95a8b8
+      internalID: 523267829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_1
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 2682
+        width: 321
+        height: 280
+      alignment: 9
+      pivot: {x: 0.63204205, y: 0.077739604}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be814628c2876bd42a81a2f43c34a989
+      internalID: 1047312834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_2
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 2668
+        width: 283
+        height: 332
+      alignment: 9
+      pivot: {x: 0.58671045, y: 0.103560485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b1e0565217aa549949a797e7d02c75
+      internalID: -516801513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_3
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 2680
+        width: 267
+        height: 324
+      alignment: 9
+      pivot: {x: 0.504011, y: 0.070293665}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49deb7ca4da139e46b5274b66d5b38cb
+      internalID: 818198456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_4
+      rect:
+        serializedVersion: 2
+        x: 2193
+        y: 2689
+        width: 262
+        height: 318
+      alignment: 9
+      pivot: {x: 0.4836491, y: 0.048715267}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f35c71d10150c46b0c14d01f83fc97
+      internalID: -1311703104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_5
+      rect:
+        serializedVersion: 2
+        x: 2693
+        y: 2687
+        width: 261
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5246189, y: 0.051535796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0232cdb2c4f4c0547bdf0e97d7ca6707
+      internalID: -1183721166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_6
+      rect:
+        serializedVersion: 2
+        x: 3187
+        y: 2685
+        width: 271
+        height: 319
+      alignment: 9
+      pivot: {x: 0.5750854, y: 0.053486694}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840530896c8c1cb4d8b75e9ae32a5da7
+      internalID: -323387935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_7
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2172
+        width: 285
+        height: 317
+      alignment: 9
+      pivot: {x: 0.59392935, y: 0.06720953}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc2ec801469cd34d9afe983f063ebce
+      internalID: -451438737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_8
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 2172
+        width: 303
+        height: 312
+      alignment: 9
+      pivot: {x: 0.61779946, y: 0.053124063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822f24f80f9e1a44ea6f2adabec4f79a
+      internalID: 288652885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_9
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 2174
+        width: 322
+        height: 306
+      alignment: 9
+      pivot: {x: 0.6350962, y: 0.048005547}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c154e38dac1374f9498605af607815
+      internalID: 718949093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_10
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 2176
+        width: 336
+        height: 301
+      alignment: 9
+      pivot: {x: 0.65602547, y: 0.05161506}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b431aa2e09dc64da6ca3684160d2e5
+      internalID: 2098621129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_11
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 2179
+        width: 352
+        height: 296
+      alignment: 9
+      pivot: {x: 0.6616079, y: 0.032735463}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295c5e309561aea47a0881226b8a3c07
+      internalID: 1329461318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_12
+      rect:
+        serializedVersion: 2
+        x: 2602
+        y: 2179
+        width: 347
+        height: 298
+      alignment: 9
+      pivot: {x: 0.6607219, y: 0.039614685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42cc25506999c8144bfcef0a048340c3
+      internalID: 1703203926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_13
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 2179
+        width: 347
+        height: 303
+      alignment: 9
+      pivot: {x: 0.6607226, y: 0.04721261}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d10c0849b50b9449ddf66009d56ae4
+      internalID: 1455415067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_14
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1668
+        width: 346
+        height: 305
+      alignment: 9
+      pivot: {x: 0.65587187, y: 0.041861713}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0705de423328446a38d8059bef61a3
+      internalID: -485557725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_15
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1668
+        width: 343
+        height: 308
+      alignment: 9
+      pivot: {x: 0.66438246, y: 0.04234413}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d3e422f331ab14a939c35aec032f41
+      internalID: 197581487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_16
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 1668
+        width: 341
+        height: 312
+      alignment: 9
+      pivot: {x: 0.6617521, y: 0.03249731}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076e7d3c7598c5042b41319ba2bc4ac5
+      internalID: 722715487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_17
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1668
+        width: 341
+        height: 315
+      alignment: 9
+      pivot: {x: 0.6617521, y: 0.03305858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e330ce173ed00498f4f6895ddc146d
+      internalID: -1454302026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_18
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1668
+        width: 367
+        height: 319
+      alignment: 9
+      pivot: {x: 0.5972564, y: 0.034956116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3daa7fce7a0d93408c3643d4521b4b9
+      internalID: -872150357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_20
+      rect:
+        serializedVersion: 2
+        x: 2611
+        y: 1666
+        width: 355
+        height: 321
+      alignment: 9
+      pivot: {x: 0.61939645, y: 0.041328598}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17796c4bc486d3043afa4693821ce496
+      internalID: 1622069806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_22
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 1666
+        width: 342
+        height: 321
+      alignment: 9
+      pivot: {x: 0.63698, y: 0.037853587}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76fc0a3696fd4714f839f38d6ebe8cbe
+      internalID: 251726215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_23
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1155
+        width: 343
+        height: 319
+      alignment: 9
+      pivot: {x: 0.6500883, y: 0.038913645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73af0ccb9be6e7e4d8ecb8e90d9de399
+      internalID: -2080565429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_24
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1155
+        width: 353
+        height: 319
+      alignment: 9
+      pivot: {x: 0.6319471, y: 0.0350713}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c7e0a1ba484a24ca643930dfceebde
+      internalID: 1529132719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_26
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 1155
+        width: 375
+        height: 319
+      alignment: 9
+      pivot: {x: 0.5947891, y: 0.0350713}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095e20b9b985cce49aa98ecee94c50bd
+      internalID: 1626890928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_28
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 1155
+        width: 370
+        height: 319
+      alignment: 9
+      pivot: {x: 0.59607, y: 0.042755987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84c54bba2eccf04fada2e2658c1eb3e
+      internalID: -1368122920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_30
+      rect:
+        serializedVersion: 2
+        x: 2098
+        y: 1155
+        width: 360
+        height: 319
+      alignment: 9
+      pivot: {x: 0.61576265, y: 0.038913645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd470ec071b38245b4549ae1b850943
+      internalID: 69030860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_32
+      rect:
+        serializedVersion: 2
+        x: 2616
+        y: 1155
+        width: 333
+        height: 319
+      alignment: 9
+      pivot: {x: 0.6509141, y: 0.038913645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4efd0f655180f2a4dbb895788004c476
+      internalID: 990913528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_33
+      rect:
+        serializedVersion: 2
+        x: 3127
+        y: 1155
+        width: 335
+        height: 319
+      alignment: 9
+      pivot: {x: 0.6500131, y: 0.038913645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b888688b44e646942a3b4a13dc72ebcd
+      internalID: -1277027644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_34
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 642
+        width: 334
+        height: 321
+      alignment: 9
+      pivot: {x: 0.6467928, y: 0.041786265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff997e47851580346bd3e0e7c05ff592
+      internalID: -1884289591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_35
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 642
+        width: 342
+        height: 321
+      alignment: 9
+      pivot: {x: 0.62902313, y: 0.03796786}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2b7ae5e19fcf640952fe3997804ef2
+      internalID: -1823244009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_37
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 642
+        width: 367
+        height: 321
+      alignment: 9
+      pivot: {x: 0.58349574, y: 0.03796786}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed8433f1ab03e940a89fe791705b2ef
+      internalID: -2033502713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_39
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 642
+        width: 357
+        height: 321
+      alignment: 9
+      pivot: {x: 0.5824012, y: 0.04560467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f13954ac2c00e489f243a9dd3d5d34
+      internalID: -2012515401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_41
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 642
+        width: 348
+        height: 321
+      alignment: 9
+      pivot: {x: 0.5950991, y: 0.03796786}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d8af9c6c89f78499bacd6c19292951
+      internalID: 1829843554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_43
+      rect:
+        serializedVersion: 2
+        x: 2623
+        y: 642
+        width: 328
+        height: 321
+      alignment: 9
+      pivot: {x: 0.6233193, y: 0.03796786}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ee0150d53a7234e8afe372d21d59f0
+      internalID: 1090345776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_44
+      rect:
+        serializedVersion: 2
+        x: 3136
+        y: 642
+        width: 326
+        height: 321
+      alignment: 9
+      pivot: {x: 0.6353558, y: 0.041786265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: facf5f078417e0f40920d6b8d5794d9f
+      internalID: -25585426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_45
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 131
+        width: 327
+        height: 319
+      alignment: 9
+      pivot: {x: 0.63494164, y: 0.04275594}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c55f9b201193d4592ece9c56035e86
+      internalID: -531389384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_46
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 131
+        width: 327
+        height: 319
+      alignment: 9
+      pivot: {x: 0.6274449, y: 0.03122881}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05fd84641b836e46926fc6d6fccedc6
+      internalID: -277031862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_47
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 131
+        width: 331
+        height: 319
+      alignment: 9
+      pivot: {x: 0.63701415, y: 0.035071153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6614d572cdbced4db50a267028a1140
+      internalID: -1021304380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_48
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 131
+        width: 348
+        height: 319
+      alignment: 9
+      pivot: {x: 0.616232, y: 0.03122881}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf829ded88dd6a546a28e30eda366818
+      internalID: -814015481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_50
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 131
+        width: 370
+        height: 319
+      alignment: 9
+      pivot: {x: 0.5894445, y: 0.035071153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb5d086d496a894483374bf53991c8c
+      internalID: 1197513986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grimmy-stun_52
+      rect:
+        serializedVersion: 2
+        x: 2615
+        y: 131
+        width: 366
+        height: 319
+      alignment: 9
+      pivot: {x: 0.5971199, y: 0.035071153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88746f077718ccb418d0c504111298a3
+      internalID: -2059390981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: af948630f26113b47b06022a080571e9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      grimmy-stun_0: 523267829
+      grimmy-stun_1: 1047312834
+      grimmy-stun_10: 2098621129
+      grimmy-stun_11: 1329461318
+      grimmy-stun_12: 1703203926
+      grimmy-stun_13: 1455415067
+      grimmy-stun_14: -485557725
+      grimmy-stun_15: 197581487
+      grimmy-stun_16: 722715487
+      grimmy-stun_17: -1454302026
+      grimmy-stun_18: -872150357
+      grimmy-stun_19: -1100125928
+      grimmy-stun_2: -516801513
+      grimmy-stun_20: 1622069806
+      grimmy-stun_21: 2045265063
+      grimmy-stun_22: 251726215
+      grimmy-stun_23: -2080565429
+      grimmy-stun_24: 1529132719
+      grimmy-stun_25: -1241025982
+      grimmy-stun_26: 1626890928
+      grimmy-stun_27: 1027240329
+      grimmy-stun_28: -1368122920
+      grimmy-stun_29: -1216831668
+      grimmy-stun_3: 818198456
+      grimmy-stun_30: 69030860
+      grimmy-stun_31: 1032108136
+      grimmy-stun_32: 990913528
+      grimmy-stun_33: -1277027644
+      grimmy-stun_34: -1884289591
+      grimmy-stun_35: -1823244009
+      grimmy-stun_36: -1862453841
+      grimmy-stun_37: -2033502713
+      grimmy-stun_38: 171797212
+      grimmy-stun_39: -2012515401
+      grimmy-stun_4: -1311703104
+      grimmy-stun_40: 1187536616
+      grimmy-stun_41: 1829843554
+      grimmy-stun_42: 234160288
+      grimmy-stun_43: 1090345776
+      grimmy-stun_44: -25585426
+      grimmy-stun_45: -531389384
+      grimmy-stun_46: -277031862
+      grimmy-stun_47: -1021304380
+      grimmy-stun_48: -814015481
+      grimmy-stun_49: 988477308
+      grimmy-stun_5: -1183721166
+      grimmy-stun_50: 1197513986
+      grimmy-stun_51: -660304802
+      grimmy-stun_52: -2059390981
+      grimmy-stun_53: 1701650505
+      grimmy-stun_6: -323387935
+      grimmy-stun_7: -451438737
+      grimmy-stun_8: 288652885
+      grimmy-stun_9: 718949093
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

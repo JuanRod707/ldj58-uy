@@ -24,6 +24,8 @@ namespace Assets.Scripts.Player
                     (Time.fixedDeltaTime);
                 movement.MovePlayer(inputVector);
             }
+            else
+                movement.Stop();
 
             if(input.actions["Attack"].IsInProgress())
                 soulCollector.HoldAttack();

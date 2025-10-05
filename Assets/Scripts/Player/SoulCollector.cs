@@ -16,6 +16,7 @@ namespace Assets.Scripts.Player
         [SerializeField] private float collectDistance;
         [SerializeField] private float killCooldown;
         [SerializeField] private int damagePerCooldown;
+        [SerializeField] Animator animator;
 
         PortalProvider portals;
         List<Soul> collectedSouls = new List<Soul>();
@@ -50,7 +51,6 @@ namespace Assets.Scripts.Player
                 var candidate = collectedSouls.Last();
 
                 candidate.DeliverToPortal(portal);
-                
                 collectedSouls.Remove(candidate);
                 lastInLine = collectedSouls.Any() ? collectedSouls.Last().transform : transform;
 
@@ -68,14 +68,16 @@ namespace Assets.Scripts.Player
 
                 Soul soul = soulProvider.GetClosestTo(transform.position);
                 
-                deathLaser.ThrowLaser(soul.transform.position, killCooldown);
                 if (soul.CurrentHealth > 0)
                 {
                     soul.Damage(damagePerCooldown);
+                    animator.SetBool("Attacking", true);
+                    deathLaser.ThrowLaser(soul.transform.position, killCooldown);
                 }
                 else
                 {
                     AddSoulToLine(soul);
+                    animator.SetBool("Attacking", false);
                 }
 
                 currentDamageCooldown = 0;
