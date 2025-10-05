@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Assets.Scripts.Config;
 using Assets.Scripts.NPCs;
 using UnityEngine; 
 
@@ -8,14 +9,17 @@ namespace Assets.Scripts.Director
 {
     public class SoulProvider : MonoBehaviour
     {
-        [SerializeField] private Soul soulPrefab; 
-        [SerializeField] private float timeBetweenKills = 5f;
-        
+        [SerializeField] private Soul soulPrefab;
+
+        float minKillTime, maxKillTime;
         private NPCInitializer npcInitializer;
         private List<Soul> availableSouls = new();
 
-        public void Initialize(NPCInitializer npcInitializer)
+        public void Initialize(GameplayConfig config, NPCInitializer npcInitializer)
         {
+            minKillTime = config.MinTimePerKill;
+            maxKillTime = config.MaxTimePerKill;
+
             this.npcInitializer = npcInitializer;
             StartCoroutine(KillCiviliansCoroutine());
         }
@@ -35,7 +39,7 @@ namespace Assets.Scripts.Director
         {
             while (true)
             {
-                yield return new WaitForSeconds(timeBetweenKills);
+                yield return new WaitForSeconds(Random.Range(minKillTime, maxKillTime));
 
                 CivAI civToKill = npcInitializer.GetRandomAlive();
                 

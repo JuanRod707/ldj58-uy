@@ -7,8 +7,8 @@ namespace Assets.Scripts.Player
     [System.Serializable]
     public class Stats
     {
-        [SerializeField] private float speed;
-        [SerializeField] private float speedReductionMult; 
+        float speed;
+        float speedReductionMult; 
 
         private List<Soul> souls;
         public List<Soul> Souls

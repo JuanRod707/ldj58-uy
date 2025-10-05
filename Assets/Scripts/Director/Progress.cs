@@ -1,27 +1,35 @@
-﻿using TMPro;
+﻿using Assets.Scripts.Config;
+using TMPro;
 using UnityEngine;
 
 namespace Assets.Scripts.Director
 {
     public class Progress : MonoBehaviour
     {
-        [SerializeField] int baseSoulGoal;
-        [SerializeField] float incrementPerRound;
         [SerializeField] TMP_Text scoreLbl;
         [SerializeField] TMP_Text roundLbl;
         [SerializeField] GameObject roundSign;
+        [SerializeField] Clock clock;
 
+        int baseSoulGoal;
+        float incrementPerRound;
         int currentSoulGoal;
         int currentRound = 1;
         int collectedSouls = 0;
+        public float CurrentRound => currentRound;
 
-        public void Initialize() => 
-            currentSoulGoal = baseSoulGoal;
+        public void Initialize(GameplayConfig config)
+        {
+            clock.Initialize(config);
+            currentSoulGoal = config.BaseSoulGoal;
+            incrementPerRound = config.GoalStretchPerRound;
+            scoreLbl.text = $"{collectedSouls}/{currentSoulGoal}";
+        }
 
         public void DeliverSoul()
         {
             collectedSouls++;
-            scoreLbl.text = collectedSouls.ToString();
+            scoreLbl.text = $"{collectedSouls}/{currentSoulGoal}";
 
             if (collectedSouls >= currentSoulGoal) 
                 RoundUp();
@@ -33,11 +41,13 @@ namespace Assets.Scripts.Director
             currentSoulGoal += (int)(currentSoulGoal * incrementPerRound);
 
             collectedSouls = 0;
-            scoreLbl.text = collectedSouls.ToString();
+            scoreLbl.text = $"{collectedSouls}/{currentSoulGoal}";
 
             roundLbl.text = $"ROUND {currentRound}";
             roundSign.SetActive(false);
             roundSign.SetActive(true);
+
+            clock.Restart();
         }
     }
 }

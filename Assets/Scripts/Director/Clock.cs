@@ -1,4 +1,5 @@
 ﻿using System;
+using Assets.Scripts.Config;
 using TMPro;
 using UnityEngine;
 
@@ -6,14 +7,15 @@ namespace Assets.Scripts.Director
 {
     public class Clock : MonoBehaviour
     {
-        [SerializeField] float roundTime;
         [SerializeField] TMP_Text label;
 
+        float roundTime;
         float remaining;
 
-        void Start()
+        public void Initialize(GameplayConfig config)
         {
-            remaining = roundTime;
+            roundTime = config.RoundTime;
+            Restart();
         }
 
         void FixedUpdate()
@@ -22,5 +24,8 @@ namespace Assets.Scripts.Director
             var ts = TimeSpan.FromSeconds(remaining);
             label.text = ts.ToString(@"mm\:ss");
         }
+
+        public void Restart() => 
+            remaining = roundTime;
     }
 }

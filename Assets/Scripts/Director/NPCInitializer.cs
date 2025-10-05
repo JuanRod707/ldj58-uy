@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Assets.Scripts.Common;
+using Assets.Scripts.Config;
 using Assets.Scripts.NPCs;
 using Unity.AI.Navigation;
 using UnityEngine;
@@ -11,8 +12,6 @@ namespace Assets.Scripts.Director
     public class NPCInitializer : MonoBehaviour
     {
         [SerializeField] NavigationProvider navigation;
-        [SerializeField] int npcAmount;
-        [SerializeField] float mapDimension;
         [SerializeField] Transform npcContainer;
 
         [SerializeField] CivAI civPrefab;
@@ -20,15 +19,17 @@ namespace Assets.Scripts.Director
         NavMeshData nm;
         NavMeshSurface nms;
         List<CivAI> civs = new List<CivAI>();
+        float mapDimension;
 
-        public int NPCAmount => npcAmount;
-        public void Initialize()
+        public void Initialize(GameplayConfig config)
         {
+            mapDimension = config.MapSize;
+
             navigation.Initialize();
-            SpawnCivs();
+            SpawnCivs(config.NPCCount);
         }
 
-        void SpawnCivs()
+        void SpawnCivs(int npcAmount)
         {
             foreach (var _ in Enumerable.Range(0, npcAmount))
             {

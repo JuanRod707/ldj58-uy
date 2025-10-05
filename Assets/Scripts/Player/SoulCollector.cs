@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Assets.Scripts.Config;
 using Assets.Scripts.Director;
 using Assets.Scripts.NPCs;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
 namespace Assets.Scripts.Player
 {
     public class SoulCollector : MonoBehaviour
     {
-        [SerializeField] float portalProximity;
         [SerializeField] float deliveryCooldown;
         [SerializeField] private DeathLaser deathLaser;
         [SerializeField] private float collectDistance;
@@ -24,12 +25,16 @@ namespace Assets.Scripts.Player
         Transform lastInLine;
         PlayerInput input;
         float currentDamageCooldown;
+        float portalProximity;
 
-        public void Initialize(SoulProvider soulProvider, PortalProvider portals)
+        public int SoulCount => collectedSouls.Count();
+
+        public void Initialize(GameplayConfig config, SoulProvider soulProvider, PortalProvider portals)
         {
             this.portals = portals;
             this.soulProvider = soulProvider;
 
+            portalProximity = config.PortalPullDistance;
             lastInLine = transform;
         }
 
@@ -86,9 +91,9 @@ namespace Assets.Scripts.Player
 
         void Continue() => 
             enabled = true;
-        
-        private bool AnySoulInRange => soulProvider.AnyInRange(transform.position, collectDistance);
 
+        bool AnySoulInRange => soulProvider.AnyInRange(transform.position, collectDistance);
+        
         private void AddSoulToLine(Soul soul)
         {
             soulProvider.RemoveSoul(soul);
@@ -101,6 +106,17 @@ namespace Assets.Scripts.Player
         private IEnumerator DamageSoul()
         {
             yield return new WaitForSeconds(currentDamageCooldown);
+        }
+
+        public Soul ClosestSoulTo(Vector3 where) => 
+            collectedSouls.OrderBy(cs => Vector3.Distance(where, cs.transform.position)).First();
+
+        public bool AnyCollectedSoulInRange(Vector3 where, float distance) => 
+            collectedSouls.Any(cs => Vector3.Distance(where, cs.transform.position) < distance);
+
+        public void RiftSoul(Soul candidate)
+        {
+            //WIP
         }
     }
 }
