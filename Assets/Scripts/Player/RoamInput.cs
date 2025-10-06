@@ -31,9 +31,7 @@ namespace Assets.Scripts.Player
                 character.Stop();
 
             if (input.actions["Attack"].IsInProgress())
-            {
                 soulCollector.HoldAttack();
-            }
             else
                 soulCollector.StopAttack();
 
