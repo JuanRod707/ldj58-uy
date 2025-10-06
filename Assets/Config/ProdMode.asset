@@ -34,7 +34,7 @@ MonoBehaviour:
   EnemyStrength: 0.008
   EnemyAttackRate: 0.02
   StunPenaltyTime: 3
-  SpeedPerLvl: 0.15
-  CarryCapPerLvl: 0.15
+  SpeedPerLvl: 0.05
+  CarryCapPerLvl: 0.05
   StrPerLvl: 0.1
-  CapturePerLvl: 0.125
+  CapturePerLvl: 0.1

@@ -11,6 +11,8 @@ namespace Assets.Scripts.Director
     {
         [SerializeField] TMP_Text scoreLbl;
         [SerializeField] TMP_Text roundLbl;
+        [SerializeField] TMP_Text phaseValue;
+
         [SerializeField] GameObject roundSign;
         [SerializeField] Clock clock;
 
@@ -40,6 +42,7 @@ namespace Assets.Scripts.Director
             currentSoulGoal = config.BaseSoulGoal;
             incrementPerRound = config.GoalStretchPerRound;
             scoreLbl.text = $"{collectedSouls}/{currentSoulGoal}";
+            phaseValue.text = currentRound.ToString();
         }
 
         public void DeliverSoul()
@@ -60,6 +63,7 @@ namespace Assets.Scripts.Director
 
             collectedSouls = 0;
             scoreLbl.text = $"{collectedSouls}/{currentSoulGoal}";
+            phaseValue.text = currentRound.ToString();
 
             roundLbl.text = $"PHASE {currentRound}";
             roundSign.SetActive(false);

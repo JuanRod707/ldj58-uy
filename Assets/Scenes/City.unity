@@ -203,6 +203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreLbl: {fileID: 1860418664}
   roundLbl: {fileID: 600709326}
+  phaseValue: {fileID: 1738077180}
   roundSign: {fileID: 1979776881}
   clock: {fileID: 5184141}
   weather: {fileID: 1914376168}
@@ -8005,6 +8006,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1738077180 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7388536972301635363, guid: 61e2b9ecc9af4414199928f5bc61a7dd, type: 3}
+  m_PrefabInstance: {fileID: 1546120443}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1749386593
 GameObject:
   m_ObjectHideFlags: 0
