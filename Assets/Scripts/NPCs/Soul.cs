@@ -1,8 +1,6 @@
-using System;
 using System.Collections;
 using Assets.Scripts.Common;
 using Assets.Scripts.Entities;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 namespace Assets.Scripts.NPCs

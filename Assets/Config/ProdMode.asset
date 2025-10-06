@@ -13,24 +13,24 @@ MonoBehaviour:
   m_Name: ProdMode
   m_EditorClassIdentifier: 
   GrimmySpeed: 6
-  GrimmySpeedCutPerSoul: 0.15
+  GrimmySpeedCutPerSoul: 0.08
   GrimmyCaptureRate: 0.08
   BaseSoulGoal: 4
   GoalStretchPerRound: 0.35
   RoundTime: 150
   NPCRespawn: 1
-  NPCCount: 100
-  MinTimePerKill: 4
-  MaxTimePerKill: 8
+  NPCCount: 60
+  MinTimePerKill: 3
+  MaxTimePerKill: 7
   EnemyRespawn: 1
-  EnemiesCount: 15
+  EnemiesCount: 10
   MinRiftInterval: 15
   MaxRiftInterval: 25
   RiftIntervalCutPerRound: 0.05
   RiftPullDistance: 8
   PortalPullDistance: 5
   MapSize: 45
-  GrimmyStrength: 0.025
+  GrimmyStrength: 0.02
   EnemyStrength: 0.008
   EnemyAttackRate: 0.02
   StunPenaltyTime: 3

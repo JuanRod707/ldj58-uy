@@ -33,11 +33,9 @@ namespace Assets.Scripts.Player
             if (input.actions["Attack"].IsInProgress())
             {
                 soulCollector.HoldAttack();
-                character.Attacking(true);
             }
-
-            if (input.actions["Attack"].WasReleasedThisFrame()) 
-                character.Attacking(false);
+            else
+                soulCollector.StopAttack();
 
             if (input.actions["Pause"].IsPressed()) 
                 pause.Open();

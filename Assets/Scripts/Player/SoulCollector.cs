@@ -16,6 +16,8 @@ namespace Assets.Scripts.Player
         [SerializeField] private DeathLaser deathLaser;
         [SerializeField] private float killCooldown;
         [SerializeField] Animator animator;
+        [SerializeField] AudioSource beamSfx;
+        [SerializeField] AudioSource beamFinishSfx;
 
         PortalProvider portals;
         List<Soul> collectedSouls = new List<Soul>();
@@ -76,14 +78,19 @@ namespace Assets.Scripts.Player
         {
             if (AnySoulInRange && currentDamageCooldown >= killCooldown)
             {
-                if (EnemyInRange) 
+                if (EnemyInRange)
+                {
                     battle.StartCombat();
+                    beamSfx.Stop();
+                }
 
                 Soul soul = soulProvider.GetClosestTo(transform.position);
                 
                 if (soul.CurrentHealth > 0)
                 {
                     soul.Damage(stats.CaptureRate);
+                    if(!beamSfx.isPlaying)
+                        beamSfx.Play();
                     animator.SetBool("Attacking", true);
                     deathLaser.ThrowLaser(soul.transform.position, killCooldown);
                 }
@@ -91,6 +98,9 @@ namespace Assets.Scripts.Player
                 {
                     AddSoulToLine(soul);
                     animator.SetBool("Attacking", false);
+
+                    beamSfx.Stop();
+                    beamFinishSfx.Play();
                 }
 
                 currentDamageCooldown = 0;
@@ -139,6 +149,12 @@ namespace Assets.Scripts.Player
             riftedSoul.DeliverToRift(rift);
             collectedSouls.Remove(riftedSoul);
             lastInLine = collectedSouls.Any() ? collectedSouls.Last().transform : transform;
+        }
+
+        public void StopAttack()
+        {
+            animator.SetBool("Attacking", false);
+            beamSfx.Stop();
         }
     }
 }

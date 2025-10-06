@@ -8,10 +8,13 @@ namespace Assets.Scripts.Director
     public class Clock : MonoBehaviour
     {
         [SerializeField] TMP_Text label;
+        [SerializeField] AudioSource alarmSfx;
+        [SerializeField] float warnTime;
 
         float roundTime;
         float remaining;
         Action onTimeUp;
+        bool hasWarned;
 
         public void Initialize(GameplayConfig config, Action onTimeUp)
         {
@@ -26,11 +29,20 @@ namespace Assets.Scripts.Director
             var ts = TimeSpan.FromSeconds(remaining);
             label.text = ts.ToString(@"mm\:ss");
 
+            if (remaining <= warnTime && !hasWarned)
+            {
+                alarmSfx.Play();
+                hasWarned = true;
+            }
+
             if (remaining <= 0)
                 onTimeUp();
         }
 
-        public void Restart() => 
+        public void Restart()
+        {
             remaining = roundTime;
+            hasWarned = false;
+        }
     }
 }

@@ -49,7 +49,6 @@ public class Battle : MonoBehaviour
         currentEnemyAttackTime = enemyAttackRate;
         battleProgress = 0.5f;
         enabled = true;
-        character.Attacking(true);
 
         panel.Show();
         panel.UpdateBattle(battleProgress);

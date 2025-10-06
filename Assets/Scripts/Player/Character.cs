@@ -71,10 +71,5 @@ namespace Assets.Scripts.Player
             
             inputDirector.EnableRoam(true);
         }
-
-        public void Attacking(bool attack)
-        {
-            animator.SetBool("Attacking", attack);
-        }
     }
 }
