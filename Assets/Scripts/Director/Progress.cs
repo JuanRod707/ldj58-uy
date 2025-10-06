@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.Audio;
 using Assets.Scripts.Config;
+using Assets.Scripts.UI;
 using TMPro;
 using UnityEngine;
 
@@ -16,16 +17,22 @@ namespace Assets.Scripts.Director
         [SerializeField] WeatherControl weather;
         [SerializeField] MusicPlayer musicPlayer;
 
+        [Header("Panels")] 
+        [SerializeField] EndPanel endPanel;
+
         int baseSoulGoal;
         float incrementPerRound;
         int currentSoulGoal;
         int currentRound = 1;
         int collectedSouls = 0;
+
+        int totalSouls;
+
         public float CurrentRound => currentRound;
 
         public void Initialize(GameplayConfig config)
         {
-            clock.Initialize(config);
+            clock.Initialize(config, OnTimeUp);
             currentSoulGoal = config.BaseSoulGoal;
             incrementPerRound = config.GoalStretchPerRound;
             scoreLbl.text = $"{collectedSouls}/{currentSoulGoal}";
@@ -38,6 +45,8 @@ namespace Assets.Scripts.Director
 
             if (collectedSouls >= currentSoulGoal) 
                 RoundUp();
+
+            totalSouls++;
         }
 
         void RoundUp()
@@ -56,6 +65,12 @@ namespace Assets.Scripts.Director
 
             weather.OnRoundChanged(currentRound);
             musicPlayer.OnRoundChanged(currentRound);
+        }
+
+        void OnTimeUp()
+        {
+            clock.enabled = false;
+            endPanel.Show(totalSouls, currentRound);
         }
     }
 }

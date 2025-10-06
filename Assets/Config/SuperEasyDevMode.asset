@@ -16,7 +16,7 @@ MonoBehaviour:
   GrimmySpeedCutPerSoul: 0.15
   BaseSoulGoal: 4
   GoalStretchPerRound: 0.5
-  RoundTime: 120
+  RoundTime: 60
   NPCCount: 100
   MinTimePerKill: 5
   MaxTimePerKill: 10
