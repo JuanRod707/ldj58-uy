@@ -223,7 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minWait: 0
   maxWait: 10
-  reachDistance: 1
+  reachDistance: 6
   movement: {fileID: 3046743658385447428}
   spriteObject: {fileID: 6354818553940710902}
   animator: {fileID: 4308100831525640852}

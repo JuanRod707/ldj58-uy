@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Assets.Scripts.Common;
 using Assets.Scripts.Director;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -41,6 +42,8 @@ namespace Assets.Scripts.NPCs
         {
             animator.SetBool("Walk", false);
             var interval = Random.Range(minWait, maxWait);
+            movement.GoTo(transform.position);
+
             yield return new WaitForSeconds(interval);
 
             currentTargetPoint = navigation.GetRandomPoint().position;
