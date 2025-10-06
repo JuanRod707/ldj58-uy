@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 8212718941955562399}
   - component: {fileID: 3110116160619741554}
   - component: {fileID: 4308100831525640852}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Billboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ Transform:
   m_GameObject: {fileID: 6354818553940710902}
   serializedVersion: 2
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: 0, y: 0.68, z: -0.27}
+  m_LocalPosition: {x: 0, y: 1.35, z: -0.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -381,8 +381,6 @@ MonoBehaviour:
   movement: {fileID: 3046743658385447428}
   spriteObject: {fileID: 6354818553940710902}
   animator: {fileID: 4308100831525640852}
+  corpseDisposeTime: 0
   deathSfx: {fileID: 0}
-  stunTime: 3
-  attackAmount: 5
-  attackTime: 0.25
   lineRenderer: {fileID: 6827923214534355195}

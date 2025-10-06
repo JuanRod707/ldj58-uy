@@ -8,6 +8,7 @@ namespace Assets.Scripts.Entities
     {
         [SerializeField] float lifeTime;
         [SerializeField] AudioHelper riftedSfx;
+        [SerializeField] float summonDelay;
 
         float pullDistance;
         SoulCollector soulCollector;
@@ -16,6 +17,8 @@ namespace Assets.Scripts.Entities
         {
             this.soulCollector = FindFirstObjectByType<SoulCollector>();
             this.pullDistance = pullDistance;
+            enabled = false;
+            Invoke("Activate", summonDelay);
             Invoke("Close", lifeTime);
         }
 
@@ -28,6 +31,9 @@ namespace Assets.Scripts.Entities
                 riftedSfx.PlayRandomOneShot();
             }
         }
+
+        void Activate() => 
+            enabled = true;
 
         void Close() => 
             Destroy(gameObject);

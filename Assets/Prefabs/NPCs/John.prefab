@@ -90,7 +90,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.9
+      value: 0.99
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -380,4 +380,5 @@ MonoBehaviour:
   movement: {fileID: 3046743658385447428}
   spriteObject: {fileID: 6354818553940710902}
   animator: {fileID: 4308100831525640852}
+  corpseDisposeTime: 120
   deathSfx: {fileID: 7917822465005181920}

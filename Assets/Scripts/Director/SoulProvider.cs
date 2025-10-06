@@ -21,7 +21,7 @@ namespace Assets.Scripts.Director
             maxKillTime = config.MaxTimePerKill;
 
             this.npcInitializer = npcInitializer;
-            StartCoroutine(KillCiviliansCoroutine());
+            StartCoroutine(WaitAndKill());
         }
         
         
@@ -34,26 +34,33 @@ namespace Assets.Scripts.Director
             availableSouls.Any(c => Vector3.Distance(c.transform.position, where) < range);
 
         public void RemoveSoul(Soul soulToRemove) => availableSouls.Remove(soulToRemove);
-        
-        private IEnumerator KillCiviliansCoroutine()
-        {
-            while (true)
-            {
-                yield return new WaitForSeconds(Random.Range(minKillTime, maxKillTime));
 
-                CivAI civToKill = npcInitializer.GetRandomAlive();
-                
-                civToKill.Kill();
-                
-                var soul = Instantiate(soulPrefab, transform);
-                soul.Summon();
-                soul.transform.position = civToKill.transform.position; 
-                availableSouls.Add(soul);
-            }
-            
+        private IEnumerator WaitAndKill()
+        {
+            yield return new WaitForSeconds(Random.Range(minKillTime, maxKillTime));
+
+            CivAI civToKill = npcInitializer.GetRandomAlive();
+            Kill(civToKill);
+            StartCoroutine(WaitAndKill());
+        }
+
+        void Kill(CivAI candidate)
+        {
+            candidate.Kill();
+            var soul = Instantiate(soulPrefab, transform);
+            soul.Summon();
+            soul.transform.position = candidate.transform.position;
+            availableSouls.Add(soul);
         }
 
         public bool Any() => 
             availableSouls.Any();
+
+        public void KillInZone(Vector3 where, float radius)
+        {
+            var candidates = npcInitializer.GetAllInZone(where, radius);
+            foreach (var c in candidates.ToList())
+                Kill(c);
+        }
     }
 }

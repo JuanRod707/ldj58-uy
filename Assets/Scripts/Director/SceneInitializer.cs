@@ -18,11 +18,13 @@ namespace Assets.Scripts.Director
         [SerializeField] Progress progress;
         [SerializeField] RiftProvider rifts;
         [SerializeField] InputDirector inputDirector;
-        
+        [SerializeField] WeatherControl weather;
+
         void Start()
         {   
             stats.Initialize(config);
-
+            
+            weather.Initialize(config);
             npcs.Initialize(config);
             enemies.Initialize(config);
             inputDirector.Initialize(config, character);

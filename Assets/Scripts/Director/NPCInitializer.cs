@@ -53,6 +53,11 @@ namespace Assets.Scripts.Director
         {
             if(respawn)
                 SpawnCiv();
+
+            civs.RemoveAll(c => !c.Alive);
         }
+
+        public IEnumerable<CivAI> GetAllInZone(Vector3 where, float radius) => 
+            civs.Where(c => c.Alive && Vector3.Distance(c.transform.position, where) < radius);
     }
 }

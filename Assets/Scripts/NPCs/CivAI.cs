@@ -20,6 +20,7 @@ namespace Assets.Scripts.NPCs
         [SerializeField] protected Movement movement;
         [SerializeField] private GameObject spriteObject;
         [SerializeField] Animator animator;
+        [SerializeField] float corpseDisposeTime;
 
         [SerializeField] AudioHelper deathSfx;
         
@@ -62,6 +63,11 @@ namespace Assets.Scripts.NPCs
             movement.Stop();
             deathSfx.PlayRandom();
             onDie();
+
+            Invoke("DisposeCorpse", corpseDisposeTime);
         }
+
+        void DisposeCorpse() => 
+            Destroy(gameObject);
     }
 }

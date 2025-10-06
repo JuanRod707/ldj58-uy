@@ -15,23 +15,30 @@ namespace Assets.Scripts.Player
         [SerializeField] private Battle battle;
         [SerializeField] private float maxDistance;
         [SerializeField] AudioSource stunnedSfx;
-
-        float baseSpeed;
-        float speedCutPerSoul;
+        [SerializeField] float minSpeed;
+        
         int health;
         float currentStunTimeLeft;
         InputDirector inputDirector;
-        
-        
-        public float CurrentSpeed => baseSpeed - (baseSpeed * speedCutPerSoul * collector.SoulCount);
+        Stats stats;
+
+
+        public float CurrentSpeed
+        {
+            get
+            {
+                var unclampedSpeed = stats.Speed - (stats.Speed * stats.SpeedCutPerSoul * collector.SoulCount);
+                return unclampedSpeed < minSpeed ? minSpeed : unclampedSpeed;
+            }
+        }
+
         public Battle Battle => battle;
         public float CollectDistance => maxDistance;
 
         public void Initialize(GameplayConfig config, Stats stats, SoulProvider soulProvider, PortalProvider portals, InputDirector inputDirector, EnemyInitializer enemyProvider)
         {
             this.inputDirector = inputDirector;
-            baseSpeed = stats.Speed;
-            speedCutPerSoul = stats.SpeedCutPerSoul;
+            this.stats = stats;
             battle.Initialize(this, config, stats, inputDirector,enemyProvider);
             collector.Initialize(config, stats, soulProvider, portals, battle, enemyProvider, maxDistance);
         }

@@ -353,10 +353,10 @@ MonoBehaviour:
   collector: {fileID: 328943352393250312}
   animator: {fileID: 1876125806840357689}
   sprite: {fileID: 2411396603745762141}
-  combatDamage: 5
   battle: {fileID: 6031063228437168237}
   maxDistance: 5
   stunnedSfx: {fileID: 8906633574351617809}
+  minSpeed: 0.5
 --- !u!114 &328943352393250312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,7 +372,6 @@ MonoBehaviour:
   deliveryCooldown: 0.2
   deathLaser: {fileID: 6474381532330100322}
   killCooldown: 0.1
-  damagePerCooldown: 1
   animator: {fileID: 1876125806840357689}
 --- !u!114 &6031063228437168237
 MonoBehaviour:
@@ -387,8 +386,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 0}
-  characterDamage: 0.04
-  enemyDamage: 0.03
 --- !u!81 &1215840596184621964
 AudioListener:
   m_ObjectHideFlags: 0

@@ -5763,7 +5763,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: d618eb8432dd34d4b96d83111a198730, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -16204,6 +16204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeTime: 50
   riftedSfx: {fileID: 653463496001601616}
+  summonDelay: 5
 --- !u!95 &2933182011964379204
 Animator:
   serializedVersion: 7
