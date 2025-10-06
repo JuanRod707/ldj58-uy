@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Assets.Scripts.Common;
+using Assets.Scripts.Config;
 using Assets.Scripts.NPCs;
 using Unity.AI.Navigation;
 using UnityEngine;
@@ -18,27 +18,38 @@ namespace Assets.Scripts.Director
         NavMeshSurface nms;
         List<EnemyAI> enemies = new List<EnemyAI>();
         float mapDimension;
+        bool respawn;
 
-        public void Initialize(float mapSize, int spawnAmount)
+        public void Initialize(GameplayConfig config)
         {
-            mapDimension = mapSize;
+            mapDimension = config.MapSize;
+            respawn = config.EnemyRespawn;
 
             navigation.Initialize();
-            SpawnEnemies(spawnAmount);
+            SpawnEnemies(config.EnemiesCount);
         }
 
         void SpawnEnemies(int npcAmount)
         {
-            foreach (var _ in Enumerable.Range(0, npcAmount))
-            {
-                var randomPoint = new Vector3(Random.Range(-mapDimension, mapDimension), 0,
-                    Random.Range(-mapDimension, mapDimension));
+            foreach (var _ in Enumerable.Range(0, npcAmount)) 
+                Spawn();
+        }
 
-                var enemy = Instantiate(civPrefab, npcContainer);
-                enemy.transform.position = randomPoint;
-                enemy.Initialize(navigation);
-                enemies.Add(enemy);
-            }
+        void Spawn()
+        {
+            var randomPoint = new Vector3(Random.Range(-mapDimension, mapDimension), 0,
+                Random.Range(-mapDimension, mapDimension));
+
+            var enemy = Instantiate(civPrefab, npcContainer);
+            enemy.transform.position = randomPoint;
+            enemy.Initialize(navigation, OnActorKilled);
+            enemies.Add(enemy);
+        }
+
+        void OnActorKilled()
+        {
+            if(respawn)
+                Spawn();
         }
 
         public bool CheckIfAnyClose(Vector3 where, float maxDistance)

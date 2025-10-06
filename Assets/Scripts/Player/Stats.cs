@@ -1,28 +1,35 @@
-﻿using System.Collections.Generic;
-using Assets.Scripts.NPCs;
+﻿using Assets.Scripts.Config;
 using UnityEngine;
 
 namespace Assets.Scripts.Player
 {
-    [System.Serializable]
-    public class Stats
+    public class Stats : MonoBehaviour
     {
+        public float Speed => speed;
+        public float SpeedCutPerSoul => speedCutPerSoul;
+        public float CombatStrength => combatStrength;
+        public float CaptureRate => captureRate;
+
+
         float speed;
-        float speedReductionMult; 
+        float speedCutPerSoul;
+        float combatStrength;
+        float captureRate;
+        GameplayConfig config;
 
-        private List<Soul> souls;
-        public List<Soul> Souls
+        public void Initialize(GameplayConfig config)
         {
-            get
-            {
-                souls ??= new List<Soul>();
+            this.config = config;
 
-                return souls;
-            }
-            set => souls = value;
+            speed = config.GrimmySpeed;
+            speedCutPerSoul = config.GrimmySpeedCutPerSoul;
+            combatStrength = config.GrimmyStrength;
+            captureRate = config.GrimmyCaptureRate;
         }
 
-        public float GetTotalSpeed => speed - (Souls.Count * speedReductionMult); 
- 
+        public void UpgradeSpeed() => speed += speed * config.SpeedPerLvl;
+        public void UpgradeCarryCap() => speedCutPerSoul -= speedCutPerSoul * config.CarryCapPerLvl;
+        public void UpgradeStrength() => combatStrength += captureRate * config.StrPerLvl;
+        public void UpgradeCapture() => captureRate += captureRate * config.CapturePerLvl;
     }
 }

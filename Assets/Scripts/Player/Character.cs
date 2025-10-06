@@ -11,8 +11,7 @@ namespace Assets.Scripts.Player
         [SerializeField] UnityEngine.AI.NavMeshAgent agent;
         [SerializeField] SoulCollector collector;
         [SerializeField] Animator animator;
-        [SerializeField] SpriteRenderer sprite; 
-        [SerializeField] int combatDamage;
+        [SerializeField] SpriteRenderer sprite;
         [SerializeField] private Battle battle;
         [SerializeField] private float maxDistance;
         [SerializeField] AudioSource stunnedSfx;
@@ -24,18 +23,17 @@ namespace Assets.Scripts.Player
         InputDirector inputDirector;
         
         
-        public float CurrentSpeed => baseSpeed - (baseSpeed * speedCutPerSoul * collector.SoulCount); 
-        public int CombatDamage => combatDamage;
+        public float CurrentSpeed => baseSpeed - (baseSpeed * speedCutPerSoul * collector.SoulCount);
         public Battle Battle => battle;
         public float CollectDistance => maxDistance;
 
-        public void Initialize(GameplayConfig config, SoulProvider soulProvider, PortalProvider portals, InputDirector inputDirector, EnemyInitializer enemyProvider)
+        public void Initialize(GameplayConfig config, Stats stats, SoulProvider soulProvider, PortalProvider portals, InputDirector inputDirector, EnemyInitializer enemyProvider)
         {
             this.inputDirector = inputDirector;
-            baseSpeed = config.GrimmySpeed;
-            speedCutPerSoul = config.GrimmySpeedCutPerSoul;
-            battle.Initialize(this, inputDirector,enemyProvider);
-            collector.Initialize(config, soulProvider, portals, battle, enemyProvider, maxDistance);
+            baseSpeed = stats.Speed;
+            speedCutPerSoul = stats.SpeedCutPerSoul;
+            battle.Initialize(this, config, stats, inputDirector,enemyProvider);
+            collector.Initialize(config, stats, soulProvider, portals, battle, enemyProvider, maxDistance);
         }
 
         public void MovePlayer(Vector3 inputVector)

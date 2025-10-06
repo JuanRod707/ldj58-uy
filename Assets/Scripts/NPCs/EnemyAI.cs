@@ -5,15 +5,8 @@ namespace Assets.Scripts.NPCs
 {
     public class EnemyAI : CivAI
     {
-        [SerializeField] private float stunTime;
-        [SerializeField] private int attackAmount;
-        [SerializeField] private float attackTime;
         [SerializeField] private LineRenderer lineRenderer;
-
-        public float StunTime => stunTime;
-        public int AttackAmount => attackAmount;
-        public float AttackTime => attackTime;
-
+        
         public void EnterCombat(Vector3 playerPosition)
         {
             movement.Stop();

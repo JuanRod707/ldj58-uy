@@ -1,4 +1,5 @@
 ﻿using System;
+using Assets.Scripts.Config;
 using Assets.Scripts.Director;
 using Assets.Scripts.NPCs;
 using Assets.Scripts.Player;
@@ -8,8 +9,6 @@ using UnityEngine;
 public class Battle : MonoBehaviour
 {
     [SerializeField] BattlePanel panel;
-    [SerializeField] float characterDamage;
-    [SerializeField] float enemyDamage;
     
     private Character character;
     private EnemyAI enemy;
@@ -18,12 +17,24 @@ public class Battle : MonoBehaviour
 
     private float battleProgress;
     private float currentEnemyAttackTime;
+    float enemyDamage;
+    float enemyAttackRate;
+    float stunPenaltyTime;
+
+    Stats stats;
     
-    public void Initialize(Character character, InputDirector inputDirector, EnemyInitializer enemyProvider)
+    public void Initialize(Character character, GameplayConfig config, Stats stats, InputDirector inputDirector, EnemyInitializer enemyProvider)
     {
         this.enemyProvider = enemyProvider;
         this.character = character;
         this.inputDirector = inputDirector;
+        this.stats = stats;
+
+        enemyDamage = config.EnemyStrength;
+        enemyAttackRate = config.EnemyAttackRate;
+        stunPenaltyTime = config.StunPenaltyTime;
+
+
         enabled = false;
     }
 
@@ -35,7 +46,7 @@ public class Battle : MonoBehaviour
         enemy = enemyProvider.GetClosestTo(transform.position, character.CollectDistance) as EnemyAI;
         enemy.EnterCombat(transform.position);
         
-        currentEnemyAttackTime = enemy.AttackTime;
+        currentEnemyAttackTime = enemyAttackRate;
         battleProgress = 0.5f;
         enabled = true;
         character.Attacking(true);
@@ -48,7 +59,7 @@ public class Battle : MonoBehaviour
     {
         if (!enemy) return;
 
-        battleProgress += characterDamage;
+        battleProgress += stats.CombatStrength;
         
         if (battleProgress >= 1)
         { 
@@ -69,7 +80,7 @@ public class Battle : MonoBehaviour
 
         if (battleProgress <= 0)
         {
-            character.Stun(enemy.StunTime);
+            character.Stun(stunPenaltyTime);
             inputDirector.EnableMinigame(false);
             enemy.Move();
             enemy = null;
@@ -84,7 +95,7 @@ public class Battle : MonoBehaviour
 
     private void EnemyAttack()
     {
-        if (currentEnemyAttackTime >= enemy.AttackTime)
+        if (currentEnemyAttackTime >= enemyAttackRate)
         {
             battleProgress -= enemyDamage;
             currentEnemyAttackTime = 0;

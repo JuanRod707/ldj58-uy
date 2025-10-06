@@ -44,7 +44,7 @@ namespace Assets.Scripts.Director
                 CivAI civToKill = npcInitializer.GetRandomAlive();
                 
                 civToKill.Kill();
-
+                
                 var soul = Instantiate(soulPrefab, transform);
                 soul.Summon();
                 soul.transform.position = civToKill.transform.position; 

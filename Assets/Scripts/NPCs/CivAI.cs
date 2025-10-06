@@ -25,11 +25,13 @@ namespace Assets.Scripts.NPCs
         
         Vector3 currentTargetPoint;
         NavigationProvider navigation;
+        Action onDie;
         public bool Alive { get; protected set; }
 
-        public void Initialize(NavigationProvider navigation)
+        public void Initialize(NavigationProvider navigation, Action onDie)
         {
             Alive = true;
+            this.onDie = onDie;
             this.navigation = navigation;
             StartCoroutine(WaitAndNavigate());
         }
@@ -59,6 +61,7 @@ namespace Assets.Scripts.NPCs
             StopAllCoroutines();
             movement.Stop();
             deathSfx.PlayRandom();
+            onDie();
         }
     }
 }

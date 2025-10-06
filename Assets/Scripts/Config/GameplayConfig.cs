@@ -8,18 +8,21 @@ namespace Assets.Scripts.Config
         [Header("Character")]
         public float GrimmySpeed;
         public float GrimmySpeedCutPerSoul;
+        public float GrimmyCaptureRate;
 
         [Header("Round")]
         public int BaseSoulGoal;
         public float GoalStretchPerRound;
         public float RoundTime;
 
-        [Header("NPCs")]
+        [Header("NPCs")] 
+        public bool NPCRespawn;
         public int NPCCount;
         public float MinTimePerKill;
         public float MaxTimePerKill;
 
-        [Header("Enemies")] 
+        [Header("Enemies")]
+        public bool EnemyRespawn;
         public int EnemiesCount;
 
         [Header("Entities")] 
@@ -31,5 +34,17 @@ namespace Assets.Scripts.Config
 
         [Header("Map")]
         public float MapSize;
+
+        [Header("Combat")] 
+        public float GrimmyStrength;
+        public float EnemyStrength;
+        public float EnemyAttackRate;
+        public float StunPenaltyTime;
+
+        [Header("Upgrades")] 
+        public float SpeedPerLvl;
+        public float CarryCapPerLvl;
+        public float StrPerLvl;
+        public float CapturePerLvl;
     }
 }

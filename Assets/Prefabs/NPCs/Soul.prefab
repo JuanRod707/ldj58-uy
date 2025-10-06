@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2472772401409207030}
   - component: {fileID: 4539675713775742096}
   m_Layer: 3
-  m_Name: Circle
+  m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 23c3c41fe455d0a489cf959e84d5b933, type: 3}
+  m_Color: {r: 0.5294118, g: 0.7568628, b: 0.77647066, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -401,7 +401,7 @@ MonoBehaviour:
   maxDistance: 4
   follow: {fileID: 7693253901350297907}
   suctionFactor: 0.05
-  maxHealth: 5
+  maxHealth: 1
   healthSprite: {fileID: 4539675713775742096}
   takenSfx: {fileID: 3886866465331204818}
 --- !u!136 &4576707764955933599

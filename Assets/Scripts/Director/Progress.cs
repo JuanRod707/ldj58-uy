@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.Audio;
 using Assets.Scripts.Config;
+using Assets.Scripts.Player;
 using Assets.Scripts.UI;
 using TMPro;
 using UnityEngine;
@@ -19,6 +20,7 @@ namespace Assets.Scripts.Director
 
         [Header("Panels")] 
         [SerializeField] EndPanel endPanel;
+        [SerializeField] UpgradePanel upgradePanel;
 
         int baseSoulGoal;
         float incrementPerRound;
@@ -30,8 +32,10 @@ namespace Assets.Scripts.Director
 
         public float CurrentRound => currentRound;
 
-        public void Initialize(GameplayConfig config)
+        public void Initialize(GameplayConfig config, Stats stats)
         {
+            this.upgradePanel.Initialize(stats);
+
             clock.Initialize(config, OnTimeUp);
             currentSoulGoal = config.BaseSoulGoal;
             incrementPerRound = config.GoalStretchPerRound;
@@ -65,6 +69,8 @@ namespace Assets.Scripts.Director
 
             weather.OnRoundChanged(currentRound);
             musicPlayer.OnRoundChanged(currentRound);
+
+            upgradePanel.Open();
         }
 
         void OnTimeUp()

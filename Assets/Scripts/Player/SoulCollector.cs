@@ -7,7 +7,6 @@ using Assets.Scripts.Entities;
 using Assets.Scripts.NPCs;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
 namespace Assets.Scripts.Player
 {
@@ -16,7 +15,6 @@ namespace Assets.Scripts.Player
         [SerializeField] float deliveryCooldown;
         [SerializeField] private DeathLaser deathLaser;
         [SerializeField] private float killCooldown;
-        [SerializeField] private int damagePerCooldown;
         [SerializeField] Animator animator;
 
         PortalProvider portals;
@@ -29,16 +27,19 @@ namespace Assets.Scripts.Player
         float currentDamageCooldown;
         float portalProximity;
         private float collectDistance;
-        
+        Stats stats;
+
 
         public int SoulCount => collectedSouls.Count();
 
-        public void Initialize(GameplayConfig config, SoulProvider soulProvider, PortalProvider portals,  Battle battle, EnemyInitializer enemyProvider, float maxDistance)
+        public void Initialize(GameplayConfig config, Stats stats, SoulProvider soulProvider, PortalProvider portals,  Battle battle, EnemyInitializer enemyProvider, float maxDistance)
         {
             this.portals = portals;
             this.soulProvider = soulProvider;
             this.battle = battle;
             this.enemyProvider = enemyProvider;
+            this.stats = stats;
+
             collectDistance = maxDistance;
 
             portalProximity = config.PortalPullDistance;
@@ -82,7 +83,7 @@ namespace Assets.Scripts.Player
                 
                 if (soul.CurrentHealth > 0)
                 {
-                    soul.Damage(damagePerCooldown);
+                    soul.Damage(stats.CaptureRate);
                     animator.SetBool("Attacking", true);
                     deathLaser.ThrowLaser(soul.transform.position, killCooldown);
                 }

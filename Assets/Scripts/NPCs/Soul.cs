@@ -24,6 +24,7 @@ namespace Assets.Scripts.NPCs
         public void Summon()
         {
             currentHealth = maxHealth;
+            healthSprite.size = Vector2.one * (maxHealth - currentHealth);
             gameObject.SetActive(true);
             follow.Initialize(minDistance, maxDistance);
         }
@@ -31,10 +32,11 @@ namespace Assets.Scripts.NPCs
         public void Damage(float amount)
         {
             currentHealth -= amount;
-            healthSprite.size = Vector2.one * currentHealth / maxHealth;
+            healthSprite.size = Vector2.one * (maxHealth - currentHealth);
         }
         public void SetFollowing(Transform target)
         {
+            healthSprite.size = Vector2.zero;
             takenSfx.PlayRandom();
             follow.StartFollowing(target);
         }

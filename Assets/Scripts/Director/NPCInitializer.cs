@@ -20,31 +20,39 @@ namespace Assets.Scripts.Director
         NavMeshSurface nms;
         List<CivAI> civs = new List<CivAI>();
         float mapDimension;
+        bool respawn;
 
-        public void Initialize(float mapSize, int spawnAmount)
+        public void Initialize(GameplayConfig config)
         {
-            mapDimension = mapSize;
-
+            mapDimension = config.MapSize;
+            respawn = config.NPCRespawn;
             navigation.Initialize();
-            SpawnCivs(spawnAmount);
+            SpawnCivs(config.NPCCount);
         }
 
         void SpawnCivs(int npcAmount)
         {
-            foreach (var _ in Enumerable.Range(0, npcAmount))
-            {
-                var randomPoint = new Vector3(Random.Range(-mapDimension, mapDimension), 0,
-                    Random.Range(-mapDimension, mapDimension));
-
-                var civ = Instantiate(civPrefabs.PickOne(), npcContainer);
-                civ.transform.position = randomPoint;
-                civ.Initialize(navigation);
-                civs.Add(civ);
-            }
+            foreach (var _ in Enumerable.Range(0, npcAmount)) 
+                SpawnCiv();
         }
         
-
-        public void Remove(CivAI civ) => civs.Remove(civ);
         public CivAI GetRandomAlive() => civs.Where(c => c.Alive).PickOne();
+
+        public void SpawnCiv()
+        {
+            var randomPoint = new Vector3(Random.Range(-mapDimension, mapDimension), 0,
+                Random.Range(-mapDimension, mapDimension));
+
+            var civ = Instantiate(civPrefabs.PickOne(), npcContainer);
+            civ.transform.position = randomPoint;
+            civ.Initialize(navigation, OnActorKilled);
+            civs.Add(civ);
+        }
+
+        void OnActorKilled()
+        {
+            if(respawn)
+                SpawnCiv();
+        }
     }
 }

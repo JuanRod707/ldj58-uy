@@ -7,8 +7,9 @@ namespace Assets.Scripts.Director
     public class SceneInitializer : MonoBehaviour
     {
         [SerializeField] private Character character;
+        [SerializeField] Stats stats;
         [SerializeField] GameplayConfig config;
-
+        
         [Header("Directors")]
         [SerializeField] NPCInitializer npcs;
         [SerializeField] EnemyInitializer enemies;
@@ -20,13 +21,15 @@ namespace Assets.Scripts.Director
         
         void Start()
         {   
-            npcs.Initialize(config.MapSize, config.NPCCount);
-            enemies.Initialize(config.MapSize, config.EnemiesCount);
+            stats.Initialize(config);
+
+            npcs.Initialize(config);
+            enemies.Initialize(config);
             inputDirector.Initialize(config, character);
-            character.Initialize(config, soulProvider, portals, inputDirector, enemies);
+            character.Initialize(config, stats, soulProvider, portals, inputDirector, enemies);
             soulProvider.Initialize(config, npcs);
 
-            progress.Initialize(config);
+            progress.Initialize(config, stats);
             portals.Initialize();
             rifts.Initialize(config, progress);
         }

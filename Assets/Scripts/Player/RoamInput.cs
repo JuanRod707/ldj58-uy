@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Assets.Scripts.UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Windows;
@@ -11,9 +12,10 @@ namespace Assets.Scripts.Player
 {
     public class RoamInput : MonoBehaviour
     {
-        
+        [SerializeField] PausePanel pause;
+ 
         private PlayerInput input;
-        
+
         Character character;
         SoulCollector soulCollector;
 
@@ -34,10 +36,11 @@ namespace Assets.Scripts.Player
                 character.Attacking(true);
             }
 
-            if (input.actions["Attack"].WasReleasedThisFrame())
-            {
+            if (input.actions["Attack"].WasReleasedThisFrame()) 
                 character.Attacking(false);
-            }
+
+            if (input.actions["Pause"].IsPressed()) 
+                pause.Open();
         }
 
         public void Initialize(Character character, PlayerInput input)
