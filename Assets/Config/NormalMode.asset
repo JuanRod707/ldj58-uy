@@ -26,7 +26,7 @@ MonoBehaviour:
   EnemiesCount: 10
   MinRiftInterval: 15
   MaxRiftInterval: 25
-  RiftIntervalCutPerRound: 0.15
+  RiftIntervalCutPerRound: 0.05
   RiftPullDistance: 8
   PortalPullDistance: 5
   MapSize: 45
