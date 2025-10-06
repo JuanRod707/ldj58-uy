@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Assets.Scripts.Common;
 using UnityEngine;
 using Assets.Scripts.Director;
 using Assets.Scripts.Config;
@@ -14,6 +15,7 @@ namespace Assets.Scripts.Player
         [SerializeField] int combatDamage;
         [SerializeField] private Battle battle;
         [SerializeField] private float maxDistance;
+        [SerializeField] AudioSource stunnedSfx;
 
         float baseSpeed;
         float speedCutPerSoul;
@@ -50,6 +52,7 @@ namespace Assets.Scripts.Player
         public void Stun(float time)
         {
             StartCoroutine(StunnedCoroutine(time));
+            stunnedSfx.Play();
         }
 
         public void Stop() => 

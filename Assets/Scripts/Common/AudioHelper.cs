@@ -21,5 +21,11 @@ namespace Assets.Scripts.Common
             player.clip = clips.PickOne();
             player.Play();
         }
+
+        public void PlayRandomOneShot()
+        {
+            player.pitch = Random.Range(minPitch, maxPitch);
+            player.PlayOneShot(clips.PickOne());
+        }
     }
 }

@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
+using Assets.Scripts.Common;
 using Assets.Scripts.Entities;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 namespace Assets.Scripts.NPCs
@@ -13,6 +15,8 @@ namespace Assets.Scripts.NPCs
         [SerializeField] float suctionFactor;
         [SerializeField] private float maxHealth;
         [SerializeField] private SpriteRenderer healthSprite;
+
+        [SerializeField] AudioHelper takenSfx;
 
         float currentHealth;
         public float CurrentHealth => currentHealth;
@@ -29,16 +33,20 @@ namespace Assets.Scripts.NPCs
             currentHealth -= amount;
             healthSprite.size = Vector2.one * currentHealth / maxHealth;
         }
-        public void SetFollowing(Transform target) => 
+        public void SetFollowing(Transform target)
+        {
+            takenSfx.PlayRandom();
             follow.StartFollowing(target);
+        }
 
         public void DeliverToPortal(Portal portal)
         {
+            portal.OnDeliver();
             Detach();
-            StartCoroutine(DeliverSoulTo(portal.transform, portal.OnSoulDelivered));
+            StartCoroutine(DeliverSoulTo(portal.transform));
         }
 
-        IEnumerator DeliverSoulTo(Transform where, Action onComplete)
+        IEnumerator DeliverSoulTo(Transform where)
         {
             var startingDistance = Vector3.Distance(transform.position, where.position);
 
@@ -48,8 +56,7 @@ namespace Assets.Scripts.NPCs
                 transform.localScale = Vector3.one * Vector3.Distance(transform.position, where.position) / startingDistance;
                 yield return null;
             }
-
-            onComplete();
+            
             Destroy(gameObject);
         }
 
@@ -59,7 +66,7 @@ namespace Assets.Scripts.NPCs
         public void DeliverToRift(Rift rift)
         {
             Detach();
-            StartCoroutine(DeliverSoulTo(rift.transform, () => { }));
+            StartCoroutine(DeliverSoulTo(rift.transform));
         }
     }
 }

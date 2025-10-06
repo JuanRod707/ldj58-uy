@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Assets.Scripts.Common;
 using Assets.Scripts.Director;
 using UnityEngine;
 using UnityEngine.Events;
@@ -19,6 +20,8 @@ namespace Assets.Scripts.NPCs
         [SerializeField] protected Movement movement;
         [SerializeField] private GameObject spriteObject;
         [SerializeField] Animator animator;
+
+        [SerializeField] AudioHelper deathSfx;
         
         Vector3 currentTargetPoint;
         NavigationProvider navigation;
@@ -55,6 +58,7 @@ namespace Assets.Scripts.NPCs
             Alive = false;
             StopAllCoroutines();
             movement.Stop();
+            deathSfx.PlayRandom();
         }
     }
 }

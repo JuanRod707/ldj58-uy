@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Player;
+﻿using Assets.Scripts.Common;
+using Assets.Scripts.Player;
 using UnityEngine;
 
 namespace Assets.Scripts.Entities
@@ -6,6 +7,8 @@ namespace Assets.Scripts.Entities
     public class Rift : MonoBehaviour
     {
         [SerializeField] float lifeTime;
+        [SerializeField] AudioHelper riftedSfx;
+
         float pullDistance;
         SoulCollector soulCollector;
 
@@ -22,6 +25,7 @@ namespace Assets.Scripts.Entities
             {
                 var candidate = soulCollector.ClosestSoulTo(transform.position);
                 soulCollector.RiftSoul(this, candidate);
+                riftedSfx.PlayRandomOneShot();
             }
         }
 

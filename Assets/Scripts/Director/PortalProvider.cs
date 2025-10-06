@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using Assets.Scripts.Entities;
 using UnityEngine;
 
@@ -6,11 +7,12 @@ namespace Assets.Scripts.Director
 {
     public class PortalProvider : MonoBehaviour
     {
-        [SerializeField] Portal[] portals;
         [SerializeField] Progress progress;
+        IEnumerable<Portal> portals;
 
         public void Initialize()
         {
+            portals = GetComponentsInChildren<Portal>();
             foreach (var p in portals) 
                 p.Initialize(progress);
         }

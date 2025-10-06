@@ -42,7 +42,7 @@ LineRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 316258274188066409}
   m_Enabled: 0
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -57,7 +57,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 840b472520231cb449bb137b32b19e7d, type: 2}
+  - {fileID: 2100000, guid: a5da4098065b7af47a2b4e134b291179, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -381,6 +381,7 @@ MonoBehaviour:
   movement: {fileID: 3046743658385447428}
   spriteObject: {fileID: 6354818553940710902}
   animator: {fileID: 4308100831525640852}
+  deathSfx: {fileID: 0}
   stunTime: 3
   attackAmount: 5
   attackTime: 0.25

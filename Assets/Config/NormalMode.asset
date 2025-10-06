@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GrimmySpeed: 8
   GrimmySpeedCutPerSoul: 0.07
-  BaseSoulGoal: 10
+  BaseSoulGoal: 7
   GoalStretchPerRound: 0.35
-  RoundTime: 300
-  NPCCount: 75
-  MinTimePerKill: 5
-  MaxTimePerKill: 10
+  RoundTime: 180
+  NPCCount: 100
+  MinTimePerKill: 3
+  MaxTimePerKill: 7
   EnemiesCount: 10
   MinRiftInterval: 15
   MaxRiftInterval: 25
