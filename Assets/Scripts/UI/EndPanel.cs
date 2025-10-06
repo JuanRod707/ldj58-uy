@@ -16,7 +16,7 @@ namespace Assets.Scripts.UI
         {
             gameObject.SetActive(true);
             var totalTime = TimeSpan.FromSeconds(Time.timeSinceLevelLoad);
-            results.text = $"souls: {souls}\npahses: {rounds}\ntotal time: {totalTime:mm\\:ss}";
+            results.text = $"souls: {souls}\nphases: {rounds}\ntotal time: {totalTime:mm\\:ss}";
 
             exitBtn.onClick.AddListener(() => SceneManager.LoadScene("MainMenu"));
         }

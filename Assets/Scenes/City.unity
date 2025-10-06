@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 33032901}
   - component: {fileID: 33032900}
   - component: {fileID: 33032902}
+  - component: {fileID: 33032903}
   m_Layer: 5
   m_Name: Arrow
   m_TagString: Untagged
@@ -257,7 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6972779, g: 1, b: 0.6367924, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -294,6 +295,21 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &33032903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33032898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.8509804}
+  m_EffectDistance: {x: 2, y: 2}
+  m_UseGraphicAlpha: 1
 --- !u!114 &33570405 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 975098555177692774, guid: a55794f178e10694ca86bf3902d46fc9, type: 3}
@@ -8980,11 +8996,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1729ac636f7ab6d47923ba6bbc0c9432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  portals:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   progress: {fileID: 5184142}
 --- !u!1 &1116357403
 GameObject:

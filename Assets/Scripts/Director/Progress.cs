@@ -57,7 +57,7 @@ namespace Assets.Scripts.Director
             collectedSouls = 0;
             scoreLbl.text = $"{collectedSouls}/{currentSoulGoal}";
 
-            roundLbl.text = $"ROUND {currentRound}";
+            roundLbl.text = $"PHASE {currentRound}";
             roundSign.SetActive(false);
             roundSign.SetActive(true);
 
